@@ -1,0 +1,57 @@
+h1 {
+  text-align: center !important;
+  font-size: 100px;
+  font-weight: 700;
+  font-family: "Noto Sans JP";
+  color: #fff;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100vw;
+  height: 100vw;
+  background-color: #e45a22;
+  display: flex;
+  align-items: center;
+}
+
+.text{
+  margin: auto;
+}
+
+.button {
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  padding: 10px 50px;
+  width:300px;
+  border: 2px solid;
+  border-radius: 1000px;
+  display: inline-block;
+  transition: all 0.5s;
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #e45a22;
+}
+
+.title{
+  margin:auto;
+}
+
+.button-list{
+  margin:auto;
+}
