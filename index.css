@@ -1,12 +1,20 @@
 h1 {
   text-align: center !important;
-  font-size: 100px;
+  font-size: 20vh;
   font-weight: 700;
   font-family: "Noto Sans JP";
   color: #fff;
 }
 
-body{
+h2 {
+  font-size: 5vh;
+  font-weight: 500;
+  font-family: "Noto Sans JP";
+  color: #fff;
+  text-align: center;
+}
+
+body {
   margin: 0;
   padding: 0;
 }
@@ -19,21 +27,21 @@ body{
   align-items: center;
 }
 
-.text{
+.text {
   margin: auto;
+  height: 100vh;
 }
 
 .button {
-  font-size: 1.6rem;
+  font-family: "Noto Sans JP";
+  font-size: 5vh;
   font-weight: 600;
   cursor: pointer;
   text-align: center;
   vertical-align: middle;
-  border-radius: 0.5rem;
   text-decoration: none;
-  padding: 10px 50px;
-  width:300px;
-  border: 2px solid;
+  width: 20vw;
+  border: 0.75vh solid;
   border-radius: 1000px;
   display: inline-block;
   transition: all 0.5s;
@@ -48,10 +56,10 @@ body{
   color: #e45a22;
 }
 
-.title{
-  margin:auto;
+.title {
+  margin: auto;
 }
 
-.button-list{
-  margin:auto;
+.button-list {
+  margin: auto;
 }
