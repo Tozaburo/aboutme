@@ -1,13 +1,13 @@
 h1 {
   text-align: center !important;
-  font-size: 20vh;
+  font-size: 10vh;
   font-weight: 700;
   font-family: "Noto Sans JP";
   color: #fff;
 }
 
 h2 {
-  font-size: 5vh;
+  font-size: 3vh;
   font-weight: 500;
   font-family: "Noto Sans JP";
   color: #fff;
@@ -34,13 +34,13 @@ body {
 
 .button {
   font-family: "Noto Sans JP";
-  font-size: 5vh;
+  font-size: 3vh;
   font-weight: 600;
   cursor: pointer;
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
-  width: 20vw;
+  width: 10vw;
   border: 0.75vh solid;
   border-radius: 1000px;
   display: inline-block;
