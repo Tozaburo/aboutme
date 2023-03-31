@@ -30,7 +30,7 @@ function replacetime() {
 
   var cmin = min + sec / 60;
 
-  var gmin = "hsl(" + String(cmin * 60) + " 80% 40%)";
+  var gmin = "hsl(" + String(cmin * 6) + " 80% 40%)";
 
   var ghour = "hsl(" + String(hour * 15) + " 80% 40%)";
 
