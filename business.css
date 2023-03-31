@@ -56,3 +56,11 @@ body {
 .button-list {
   margin: auto;
 }
+
+.icon img{
+  transform:0 0;
+  height:10vh;
+  position: fixed;
+  top: 5vh;
+  left: 5vh;
+}
