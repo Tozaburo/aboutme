@@ -29,10 +29,12 @@ function replacetime() {
   document.querySelector(".time").innerHTML = result;
 
   var cmin = min + sec / 60;
+  
+  var chour = hour + cmin / 60;
 
   var gmin = "hsl(" + String(cmin * 6) + " 80% 40%)";
 
-  var ghour = "hsl(" + String(hour * 15) + " 80% 40%)";
+  var ghour = "hsl(" + String(chour * 15) + " 80% 40%)";
 
   document.getElementById("main").style.background =
     "linear-gradient(" + gmin + ", " + ghour + ")";
