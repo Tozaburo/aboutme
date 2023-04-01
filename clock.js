@@ -1,3 +1,11 @@
+if (window.navigator.language == 'ja'){
+  alert('新感覚の時計へようこそ！\nこの時計は時間に合わせて背景が変わる時計です。\nまた、「b」キーを押すことで文字の太さを変えられます。');
+}else{
+  alert('Welcome to a new kind of clock!\nThis clock has a background that changes with the time.\nYou can also change the thickness of the letters by pressing the "b" key.');
+}
+
+
+
 setInterval(() => {
   replacetime();
 }, 100);
