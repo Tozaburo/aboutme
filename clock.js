@@ -29,7 +29,7 @@ function replacetime() {
   document.querySelector(".time").innerHTML = result;
 
   var cmin = min + sec / 60;
-  
+
   var chour = hour + cmin / 60;
 
   var gmin = "hsl(" + String(cmin * 6) + " 80% 40%)";
@@ -38,6 +38,21 @@ function replacetime() {
 
   document.getElementById("main").style.background =
     "linear-gradient(" + gmin + ", " + ghour + ")";
-  
-  console.log(cmin);
+}
+
+document.addEventListener("keydown", keydownEvent, false);
+
+var fontW = 200;
+
+function keydownEvent(event) {
+  if (event.code === "KeyB") {
+    if (fontW == 200) {
+      fontW = 700;
+      console.log("700");
+    } else {
+      console.log("200");
+      fontW = 200;
+    }
+    document.getElementById("time").style.fontWeight = fontW;
+  }
 }
