@@ -23,11 +23,18 @@ body {
   margin: auto;
 }
 
+.button{
+  cursor: pointer;
+}
+
+.comingsoon{
+  cursor: default;
+}
+
 .button, .comingsoon {
   font-family: "Noto Sans JP";
   font-size: 2vh;
   font-weight: 600;
-  cursor: pointer;
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
