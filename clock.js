@@ -1,6 +1,16 @@
+var tsec = 61;
+
 setInterval(() => {
-  replacetime();
+  timeChanged();
 }, 100);
+
+function timeChanged() {
+  if (tsec != new Date().getSeconds()) {
+    replacetime();
+    tsec = new Date().getSeconds();
+    console.log(tsec);
+  }
+}
 
 function replacetime() {
   var now = new Date();
