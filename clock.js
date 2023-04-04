@@ -93,7 +93,7 @@ function keydownEvent(event) {
 }
 
 if (window.navigator.language == 'ja'){
-  alert('新感覚の時計へようこそ！\nこの時計は時間に合わせて背景が変わる時計です。\nまた、「b」キーを押すことで文字の太さを変えられます。');
+  alert('新感覚の時計へようこそ！\nこの時計は時間に合わせて背景が変わる時計です。\nまた、「b」キーを押すことで文字の太さを、\n「s」キーを押すことで秒単位で変わるかどうかを変えられます。');
 }else{
-  alert('Welcome to a new kind of clock!\nThis clock has a background that changes with the time.\nYou can also change the thickness of the letters by pressing the "b" key.');
+  alert('Welcome to a new kind of clock!\nThis clock is a clock with a background that changes with the time.\nYou can change the thickness of the letters by pressing the "b" key\nYou can also change whether the background changes in seconds by pressing the "s" key.');
 }
