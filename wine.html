@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://tozaburo.github.io/aboutme/wine.css"/>
+  <script src="https://tozaburo.github.io/aboutme/wine.js"></script>
+  <link rel="icon" href="tozaburo-box.png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;800;900&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="title">
+      <h1>作品</h1>
+    </div>
+    <div class="field">
+      <ul>
+        <li>
+          <p>前年の10月〜３月の雨の量（mL）</p>
+          <input type="number" id="lrain">
+        </li>
+        <li>
+          <p>８,９月の雨の量（mL）</p>
+          <input type="number" id="train">
+        </li>
+        <li>
+          <p>４〜９月の平均気温（℃）</p>
+          <input type="number" id="temp">
+        </li>
+        <li>
+          <p>ワインの年齢（年）</p>
+          <input type="number" id="year">
+        </li>
+        <li>
+          <a href="javascript:calc();" class="button">計算！</a>
+        </li>
+        <li>
+          <p class="result" id="result">ワインの品質：</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
