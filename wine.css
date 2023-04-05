@@ -97,3 +97,11 @@ input[type="number"] {
 .result{
   text-align: center;
 }
+
+.icon img{
+  transform:0 0;
+  height:10vh;
+  position: fixed;
+  top: 5vh;
+  left: 5vh;
+}
