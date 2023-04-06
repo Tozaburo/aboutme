@@ -5,7 +5,6 @@ function calc() {
   var year = Number(document.getElementById("year").value);
   var price =
     lrain * 0.00117 - train * 0.00386 + temp * 0.616 + year * 0.02358 - 12.145;
-  console.log(price);
   document.querySelector(".result").innerHTML =
     "ワインの品質：" + String(price);
 }
