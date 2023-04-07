@@ -90,10 +90,9 @@ function check() {
 
 function correct() {
   if (hadHint == 0){
-    delete event[year.indexOf(answer)]
-    delete year[year.indexOf(answer)]
+    event.splice[year.indexOf(answer), 1]
+    year.splice[year.indexOf(answer), 1]
   }
-  var height = document.documentElement.clientHeight;
   document.getElementById("answer").value = "";
   audio("correct");
   confetti();
