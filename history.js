@@ -64,6 +64,7 @@ var hint = [
   "行く、NASA"
 ];
 
+var yanswer = "";
 var hadHint = 0;
 var pnum = 0;
 var answer = "0000";
@@ -80,7 +81,7 @@ function newQuiz() {
 }
 
 function check() {
-  var yanswer = document.getElementById("answer").value;
+  yanswer = document.getElementById("answer").value;
   if (yanswer == answer) {
     correct();
   } else {
@@ -89,9 +90,9 @@ function check() {
 }
 
 function correct() {
-  if (hadHint == 0){
-    event.splice[year.indexOf(answer), 1]
-    year.splice[year.indexOf(answer), 1]
+  if (hadHint == 0) {
+    event.splice(year.indexOf(yanswer), 1);
+    year.splice(year.indexOf(yanswer), 1);
   }
   document.getElementById("answer").value = "";
   audio("correct");
