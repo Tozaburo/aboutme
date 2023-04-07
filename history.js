@@ -64,6 +64,7 @@ var hint = [
   "行く、NASA"
 ];
 
+var hadHint = 0;
 var pnum = 0;
 var answer = "0000";
 
@@ -72,16 +73,15 @@ function random(min, max) {
 }
 
 function newQuiz() {
-  pnum = random(0, 18);
+  hadHint = 0;
+  pnum = random(0, year.length);
   answer = year[pnum];
-  console.log(event[pnum]);
   document.getElementById("question").textContent = event[pnum];
 }
 
 function check() {
   var yanswer = document.getElementById("answer").value;
   if (yanswer == answer) {
-    console.log("correct");
     correct();
   } else {
     wrong();
@@ -89,10 +89,15 @@ function check() {
 }
 
 function correct() {
+  if (hadHint == 0){
+    delete event[year.indexOf(answer)]
+    delete year[year.indexOf(answer)]
+  }
   var height = document.documentElement.clientHeight;
   document.getElementById("answer").value = "";
   audio("correct");
   confetti();
+  newQuiz();
 }
 
 function wrong() {
@@ -101,6 +106,7 @@ function wrong() {
 
 function fhint() {
   alert(hint[pnum]);
+  hadHint = 1;
 }
 
 function audio(file) {
