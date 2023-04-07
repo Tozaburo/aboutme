@@ -93,6 +93,7 @@ function correct() {
   if (hadHint == 0) {
     event.splice(year.indexOf(yanswer), 1);
     year.splice(year.indexOf(yanswer), 1);
+    hint.splice(year.indexOf(yanswer), 1);
   }
   document.getElementById("answer").value = "";
   audio("correct");
