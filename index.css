@@ -6,6 +6,14 @@ h1 {
   color: #fff;
 }
 
+h2 {
+  text-align: center !important;
+  font-size: 5vh;
+  font-weight: 700;
+  font-family: "Noto Sans JP";
+  color: #fff;
+}
+
 body {
   margin: 0;
   padding: 0;
