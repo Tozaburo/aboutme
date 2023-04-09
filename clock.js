@@ -1,7 +1,7 @@
 var url = location.href;
 var mode = "0";
 
-if (url != "https://tozaburo.github.io/aboutme/history") {
+if (url != "https://tozaburo.github.io/aboutme/clock") {
   mode = "1";
 }
 
@@ -31,12 +31,9 @@ function replacetime() {
     var sec = 56;
   }
 
-  var millisec = now.getMilliseconds();
   var shour = String(hour);
   var smin = String(min);
   var ssec = String(sec);
-
-  console.log(millisec);
 
   if (shour.length == 1) {
     shour = "0" + shour;
@@ -106,8 +103,8 @@ function keydownEvent(event) {
   }
 }
 
-// if (window.navigator.language == 'ja'){
-//   alert('新感覚の時計へようこそ！\nこの時計は時間に合わせて背景が変わる時計です。\nまた、「b」キーを押すことで文字の太さを、\n「s」キーを押すことで秒単位で変わるかどうかを変えられます。');
-// }else{
-//   alert('Welcome to a new kind of clock!\nThis clock is a clock with a background that changes with the time.\nYou can change the thickness of the letters by pressing the "b" key\nYou can also change whether the background changes in seconds by pressing the "s" key.');
-// }
+if (window.navigator.language == 'ja'){
+  alert('新感覚の時計へようこそ！\nこの時計は時間に合わせて背景が変わる時計です。\nまた、「b」キーを押すことで文字の太さを、\n「s」キーを押すことで秒単位で変わるかどうかを変えられます。');
+}else{
+  alert('Welcome to a new kind of clock!\nThis clock is a clock with a background that changes with the time.\nYou can change the thickness of the letters by pressing the "b" key\nYou can also change whether the background changes in seconds by pressing the "s" key.');
+}
