@@ -1,10 +1,3 @@
-var url = location.href;
-var mode = "0";
-
-if (url != "https://tozaburo.github.io/aboutme/clock") {
-  mode = "1";
-}
-
 var tsec = 61;
 
 setInterval(() => {
@@ -19,17 +12,13 @@ function timeChanged() {
 }
 
 function replacetime() {
-  if (mode == "0") {
-    var now = new Date();
 
-    var hour = now.getHours();
-    var min = now.getMinutes();
-    var sec = now.getSeconds();
-  } else {
-    var hour = 12;
-    var min = 34;
-    var sec = 56;
-  }
+  var now = new Date();
+
+  var hour = now.getHours();
+  var min = now.getMinutes();
+  var sec = now.getSeconds();
+
 
   var shour = String(hour);
   var smin = String(min);
