@@ -1,6 +1,8 @@
 var lang = window.navigator.language;
 
-clang();
+window.addEventListener("DOMContentLoaded", function () {
+  clang();
+});
 
 function clang() {
   if (lang != "ja") {
