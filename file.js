@@ -45,3 +45,36 @@ function copyResult() {
   copy = ntype + vname + result + last;
   navigator.clipboard.writeText(copy);
 }
+
+var lang = window.navigator.language;
+
+window.addEventListener("DOMContentLoaded", function () {
+  clang();
+});
+
+function clang() {
+  if (lang != "ja") {
+    document.getElementById("main").innerHTML = `
+		<div class="title">
+      <h1>Files to Python/JS Lists</h1>
+    </div>
+    <div class="quiz">
+      <h2 id="question">Making txt file to python/js's list</h2>
+      <div class="input">
+        <h3 for="name">Name of list：</h3>
+        <input type="text" id="name" class="name">
+      </div>
+      <div class="button-list">
+        <label class="button"><input type="file" accept=".txt" id='file' style="display: none;">Upload the File</label>
+        <a onclick="changeType()" class="button switch">python</a>
+        <a onclick="copyResult()" class="button">Copy!</a>
+      </div>
+    </div>
+    <div class="icon">
+      <a href="https://tozaburo.github.io/aboutme/">
+        <img src="home.png" alt="">
+      </a>
+    </div>
+    `;
+  }
+}
