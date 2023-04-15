@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 function clang() {
   if (lang != "ja") {
-    document.getElementById("main").innerHTML = `
+    document.querySelector(".main").innerHTML = `
 		  <div class="text">
       <div class="title">
         <h1>2²×101</h1>
