@@ -54,7 +54,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
 function clang() {
   if (lang != "ja") {
-    document.getElementById("main").innerHTML = `
+    document.querySelector("#title").innerHTML = "Files to Python/JS List"
+    document.querySelector(".main").innerHTML = `
 		<div class="title">
       <h1>Files to Python/JS Lists</h1>
     </div>
