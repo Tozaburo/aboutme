@@ -17,7 +17,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
 function clang() {
   if (lang != "ja") {
-    document.getElementById("main").innerHTML = `
+    document.querySelector("#title").innerHTML = "Quality of Wine"
+    document.querySelector(".main").innerHTML = `
 		  <div class="title">
       <h1>Quality of Wine</h1>
     </div>
