@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 function clang() {
   if (lang != "ja") {
-    document.querySelector('#title').innerHTML = "Activity";
+    document.querySelector("#title").innerHTML = "Activity";
     document.querySelector(".main").innerHTML = `
     <div class="text">
       <div class="title">
