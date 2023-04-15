@@ -537,12 +537,8 @@ function wrong() {
   audio("wrong");
 }
 
-function hint() {
-  alert(answer);
-}
-
 function fhint() {
-  alert(hint[pnum]);
+  alert(answer);
   hadHint = 1;
 }
 
