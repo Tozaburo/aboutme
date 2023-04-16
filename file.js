@@ -53,7 +53,7 @@ window.addEventListener("load", () => {
         ttxt = tttxt;
 
         if (n < txt.length - 1) {
-          result = result + ttxt + ",";
+          result = result + ttxt + ", ";
         } else {
           result = result + ttxt;
         }
