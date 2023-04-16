@@ -315,12 +315,9 @@ function transform(cid) {
     query.splice(query.indexOf(cid),1);
   }
 
-  squery = query.join("&");
+  lquery = query.join("&");
 
-  console.log(query);
-  console.log(squery);
-
-  location.href = "https://tozaburo.github.io/aboutme/history?" + squery;
+  location.href = "https://tozaburo.github.io/aboutme/history?" + lquery;
 }
 
 function isChecked(Id) {
