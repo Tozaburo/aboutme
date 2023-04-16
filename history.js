@@ -3,7 +3,7 @@ var url = location.href;
 var event = [];
 
 if (url.indexOf("important") != -1) {
-  document.getElementById("important").checked; = true;
+  document.getElementById("important").checked = true;
   event.push(
     ["604", "十七条の憲法が施行される"],
     ["645", "中大兄皇子と中臣鎌足が大化の改新を行う"],
@@ -126,7 +126,7 @@ if (url.indexOf("important") != -1) {
 }
 
 if (url.indexOf("basic") != -1) {
-  document.getElementById("basic").checked; = true;
+  document.getElementById("basic").checked = true;
   event.push(
     ["538", "百済の聖明王が仏教を伝える"],
     ["593", "聖徳太子が推古天皇の摂政となる"],
@@ -204,7 +204,7 @@ if (url.indexOf("basic") != -1) {
 }
 
 if (url.indexOf("advanced") != -1) {
-  document.getElementById("advanced").checked; = true;
+  document.getElementById("advanced").checked = true;
   event.push(
     ["57", "奴国王が後漢に使いを送り、金印を授かる"],
     ["239", "卑弥呼が魏に使いを送る"],
