@@ -12,7 +12,7 @@ window.addEventListener("load", () => {
     reader.readAsText(file);
     reader.onload = () => {
       var txt = reader.result;
-      txt = txt.split("\n");
+      txt = txt.split(/\r\n|\n/);
       var ttxt = "";
       var stxt = "";
       var n = 0;
