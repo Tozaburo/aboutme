@@ -13,13 +13,34 @@ window.addEventListener("load", () => {
     reader.onload = () => {
       var txt = reader.result;
       txt = txt.split("\n");
+      var ttxt = "";
+      var stxt = "";
       var n = 0;
       result = " = [";
       while (n < txt.length) {
-        if (n < txt.length - 1) {
-          result = result + '"' + txt[n] + '",';
+        ttxt = txt[n];
+        if (ttxt.indexOf(",") == -1) {
+          var isM = 0;
         } else {
-          result = result + '"' + txt[n] + '"';
+          var isM = 1;
+        }
+        ttxt = String(ttxt);
+        if (isM == 1) {
+          ttxt = '["' + ttxt + '"]';
+        }
+
+        if (isM == 0) {
+          if (n < txt.length - 1) {
+            result = result + '"' + ttxt + '",';
+          } else {
+            result = result + '"' + ttxt + '"';
+          }
+        } else {
+          if (n < txt.length - 1) {
+            result = result + ttxt + ",";
+          } else {
+            result = result + ttxt;
+          }
         }
         n += 1;
       }
@@ -54,7 +75,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 function clang() {
   if (lang != "ja") {
-    document.querySelector("#title").innerHTML = "Files to Python/JS List"
+    document.querySelector("#title").innerHTML = "Files to Python/JS List";
     document.querySelector(".main").innerHTML = `
 		<div class="title">
       <h1>Files to Python/JS Lists</h1>
