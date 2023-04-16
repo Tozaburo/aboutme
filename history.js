@@ -1,11 +1,5 @@
 var url = location.href;
 
-if (url.indexOf("https://tozaburo.github.io/aboutme/history?") != -1) {
-  var mode = url.replace("https://tozaburo.github.io/aboutme/history?", "");
-} else {
-  var mode = "important";
-}
-
 var event = [];
 
 if (url.indexOf("important") != -1) {
