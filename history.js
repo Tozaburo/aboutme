@@ -1,8 +1,10 @@
 var url = location.href;
 
+var squery = url.replace("https://tozaburo.github.io/aboutme/history?", "");
+
 var event = [];
 
-if (url.indexOf("important") != -1) {
+if (squery.indexOf("important") != -1) {
   document.getElementById("important").checked = true;
   event.push(
     ["604", "十七条の憲法が施行される"],
@@ -125,7 +127,7 @@ if (url.indexOf("important") != -1) {
   );
 }
 
-if (url.indexOf("basic") != -1) {
+if (squery.indexOf("basic") != -1) {
   document.getElementById("basic").checked = true;
   event.push(
     ["538", "百済の聖明王が仏教を伝える"],
@@ -203,7 +205,7 @@ if (url.indexOf("basic") != -1) {
   );
 }
 
-if (url.indexOf("advanced") != -1) {
+if (squery.indexOf("advanced") != -1) {
   document.getElementById("advanced").checked = true;
   event.push(
     ["57", "奴国王が後漢に使いを送り、金印を授かる"],
@@ -265,7 +267,7 @@ function random(min, max) {
 
 function newQuiz() {
   hadHint = 0;
-  pnum = random(0, year.length);
+  pnum = random(0, event.length);
   answer = event[pnum][1];
   document.getElementById("question").textContent = event[pnum][0];
 }
@@ -302,23 +304,23 @@ function audio(file) {
   document.getElementById(file).play();
 }
 
-function transform() {
-  var query = [];
-  if (isChecked("important")) {
-    query.push = "important";
+var query = squery.split("&");
+
+console.log(query);
+
+function transform(cid) {
+  if (query.indexOf(cid) == -1) {
+    query.push(cid);
+  } else {
+    query.splice(query.indexOf(cid),1);
   }
 
-  if (isChecked("basic")) {
-    query.push = "basic";
-  }
+  squery = query.join("&");
 
-  if (isChecked("advanced")) {
-    query.push = "advanced";
-  }
+  console.log(query);
+  console.log(squery);
 
-  query.join("&");
-
-  location.href = "https://tozaburo.github.io/aboutme/history?" + query;
+  location.href = "https://tozaburo.github.io/aboutme/history?" + squery;
 }
 
 function isChecked(Id) {
