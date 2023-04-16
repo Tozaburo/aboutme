@@ -25,23 +25,39 @@ window.addEventListener("load", () => {
           var isM = 1;
         }
         ttxt = String(ttxt);
-        if (isM == 1) {
-          ttxt = '["' + ttxt + '"]';
-        }
+        ttxt = ttxt.split(",");
+        var m = 0;
 
         if (isM == 0) {
-          if (n < txt.length - 1) {
-            result = result + '"' + ttxt + '",';
-          } else {
-            result = result + '"' + ttxt + '"';
+          var tttxt = "";
+          while (m < ttxt.length) {
+            if (m < ttxt.length - 1) {
+              tttxt = tttxt + '"' + ttxt[m] + '",';
+            } else {
+              tttxt = tttxt + '"' + ttxt[m] + '"';
+            }
+            m += 1;
           }
         } else {
-          if (n < txt.length - 1) {
-            result = result + ttxt + ",";
-          } else {
-            result = result + ttxt;
+          var tttxt = "[";
+          while (m < ttxt.length) {
+            if (m < ttxt.length - 1) {
+              tttxt = tttxt + '"' + ttxt[m] + '",';
+            } else {
+              tttxt = tttxt + '"' + ttxt[m] + '"]';
+            }
+            m += 1;
           }
         }
+
+        ttxt = tttxt;
+
+        if (n < txt.length - 1) {
+          result = result + ttxt + ",";
+        } else {
+          result = result + ttxt;
+        }
+
         n += 1;
       }
       result = result + "]";
