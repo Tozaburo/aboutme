@@ -2,10 +2,55 @@ setInterval(() => {
   mouse();
 }, 100);
 
-function mouse(){
+var link = [
+  ["projects", "project"],
+  ["activity", "activities"],
+  ["clock", "time"],
+  ["file", "files"],
+  ["wine", "wines"],
+  ["wine", "quality"],
+  ["wine", "qualityofwine"],
+  ["wine", "qualityofwines"],
+  ["wine", "quality-of-wine"],
+  ["wine", "quality-of-wines"]
+];
+
+var thisurl = location.href;
+
+thisurl = thisurl.replace("https://tozaburo.github.io/aboutme/", "");
+
+thisurl = thisurl.replace("/", "");
+
+var n = 0;
+
+while (n < link.length){
+  if (link[n][1] == thisurl){
+    var newurl = link[n][0];
+    location.href = "https://tozaburo.github.io/aboutme/" + newurl + "/";
+    break;
+  }
+  n += 1;
+}
+
+function mouse() {
   var sec = new Date().getSeconds();
-  var item = (Math.floor(sec * 4))%14;
-  var mouse = ['col-resize', 'row-resize', 'n-resize', 'e-resize', 's-resize', 'w-resize', 'ne-resize', 'se-resize', 'sw-resize', 'nw-resize', 'ew-resize', 'ns-resize', 'nesw-resize', 'nwse-resize'];
+  var item = Math.floor(sec * 4) % 14;
+  var mouse = [
+    "col-resize",
+    "row-resize",
+    "n-resize",
+    "e-resize",
+    "s-resize",
+    "w-resize",
+    "ne-resize",
+    "se-resize",
+    "sw-resize",
+    "nw-resize",
+    "ew-resize",
+    "ns-resize",
+    "nesw-resize",
+    "nwse-resize"
+  ];
   document.getElementById("change").style.cursor = mouse[item];
 }
 
@@ -50,4 +95,4 @@ function clang() {
   }
 }
 
-
+var url = location.href;
