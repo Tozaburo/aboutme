@@ -21,6 +21,8 @@ thisurl = thisurl.replace("https://tozaburo.github.io/aboutme/", "");
 
 thisurl = thisurl.replace("/", "");
 
+thisurl = thisurl.toUpperCase();
+
 var n = 0;
 
 while (n < link.length){
