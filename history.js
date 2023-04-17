@@ -2,6 +2,12 @@ var url = location.href;
 
 var squery = url.replace("https://tozaburo.github.io/aboutme/history?", "");
 
+if (url == "https://tozaburo.github.io/aboutme/history"){
+  location.href = "https://tozaburo.github.io/aboutme/history?"
+}
+
+squery = "important";
+
 var event = [];
 
 if (squery.indexOf("important") != -1) {
@@ -311,8 +317,6 @@ function audio(file) {
 }
 
 var query = squery.split("&");
-
-console.log(query);
 
 function transform(cid) {
   if (query.indexOf(cid) == -1) {
