@@ -26,7 +26,7 @@ var n = 0;
 while (n < link.length){
   if (link[n][1] == thisurl){
     var newurl = link[n][0];
-    location.href = "https://tozaburo.github.io/aboutme/" + newurl + "/";
+    location.href = "https://tozaburo.github.io/aboutme/" + newurl;
     break;
   }
   n += 1;
