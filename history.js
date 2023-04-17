@@ -2,8 +2,6 @@ var url = location.href;
 
 var squery = url.replace("https://tozaburo.github.io/aboutme/history?", "");
 
-squery = "important";
-
 var event = [];
 
 if (squery.indexOf("important") != -1) {
