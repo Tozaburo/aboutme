@@ -2,13 +2,14 @@ h1 {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 200;
-  font-size: 10vh;
+  font-size: 30vh;
   color: #fff;
 }
 
 .main, .overlay {
   height: 100vh;
   width: 100vw;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
