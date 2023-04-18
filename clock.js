@@ -1,5 +1,7 @@
 var tsec = 61;
 
+document.documentElement.requestFullscreen();
+
 setInterval(() => {
   timeChanged();
 }, 1);
