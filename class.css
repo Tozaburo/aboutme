@@ -24,5 +24,9 @@ table {
 
 .pointer {
   position: absolute;
-  height: 5vh;
+  height: 4.5vh;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  z-index:100000;
 }
