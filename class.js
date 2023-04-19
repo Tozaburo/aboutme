@@ -1,7 +1,10 @@
 var now = new Date();
 
-var hour = now.getHours();
-var min = now.getMinutes();
+// var hour = now.getHours();
+// var min = now.getMinutes();
+
+var hour = 8;
+var min = 0;
 
 min = (hour - 8) * 60 + min;
 
