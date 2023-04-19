@@ -36,5 +36,5 @@ function pospointer() {
 
   var vh = (document.documentElement.clientHeight / 100) * 70;
 
-  document.querySelector(".pointer").style.left = "10" + "px";
+  document.querySelector(".pointer").style.left = String(px + vh) + "px";
 }
