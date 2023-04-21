@@ -18,7 +18,7 @@
     <div class="title">
       <h1>コンタクトフォーム</h1>
     </div>
-    <form action="#" method="post">
+    <form action="/mail.php" method="post">
       <h2 id="question"></h2>
       <input name="name" type="text" class="center input" placeholder="お名前">
       <input name="email" type="email" class="center input" placeholder="メールアドレス">
@@ -27,17 +27,6 @@
         <input class="button" type="submit" name="send" value="送信！">
       </div>
     </form>
-    <?php
-
-if ($_POST['name'] != "" && $_POST['message'] != "" && $_POST['email'] != "")
-  
-  $to = "tozaburo.3d@gmail.com";
-  $title = $_POST['name'] . "さんからのお問い合わせ";
-  $message = $_POST['message'] . $_POST['email'];
-  $headers = "From: tozaburo.3d@gmail.com";
-
-  mb_send_mail($to, $title, $message, headers)
-?>
     <div class="icon">
       <a href="https://tozaburo.github.io/aboutme/">
         <img src="home.png" alt="">
