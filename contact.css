@@ -1,0 +1,175 @@
+.title {
+  margin: auto;
+}
+
+h1 {
+  text-align: center !important;
+  font-size: 10vh;
+  font-weight: 700;
+  font-family: "Noto Sans JP";
+  color: #fff;
+  display: block;
+}
+
+h2 {
+  text-align: center !important;
+  font-size: 5vh;
+  font-weight: 700;
+  font-family: "Noto Sans JP";
+  color: #fff;
+  display: block;
+}
+
+h3 {
+  text-align: center !important;
+  font-size: 4vh;
+  font-weight: 700;
+  font-family: "Noto Sans JP";
+  color: #fff;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-family: "Noto Sans JP";
+  font-size: 3vh;
+  font-weight: 600;
+  color: #fff;
+  display: block;
+  width: 100%;
+}
+
+.input {
+  font-family: "Noto Sans JP";
+  font-size: 2vh;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  width: 100vh;
+  padding: 1vh;
+  border: 0.75vh solid;
+  border-radius: 4vh;
+  display: block;
+  transition: color, background-color 0.5s;
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+::placeholder {
+  font-family: "Noto Sans JP";
+  font-size: 2vh;
+  font-weight: 200;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #fff;
+}
+
+.center {
+  margin: 2vh auto;
+}
+
+.centerdiv {
+  display:flex;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100%;
+  background-color: #e45a22;
+  align-items: center;
+  padding: 10vh 0;
+}
+
+.button {
+  font-family: "Noto Sans JP";
+  font-size: 2vh;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  width: 30vh;
+  padding: 1vh;
+  margin: 2vh auto;
+  border: 0.75vh solid;
+  border-radius: 1000px;
+  display: inline-block;
+  transition: color, background-color 0.5s;
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #e45a22;
+}
+
+.input:-webkit-autofill {
+  transition: background-color, color 10000s ease-in-out 0s;
+  font-family: "Noto Sans JP";
+}
+
+.result {
+  text-align: center;
+}
+
+.icon img {
+  transform: 0 0;
+  height: 10vh;
+  position: fixed;
+  top: 5vh;
+  left: 5vh;
+}
+
+h5 {
+  text-align: center;
+  font-family: "Noto Sans JP";
+  font-size: 2vh;
+  font-weight: 600;
+  color: #fff;
+}
+
+.link {
+  text-align: center;
+  font-family: "Noto Sans JP";
+  font-size: 2vh;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 10vh;
+}
+
+.link a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.button-list {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
