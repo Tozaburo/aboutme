@@ -293,7 +293,7 @@ function check() {
 
 function correct() {
   if (hadHint == 0) {
-    event.splice(year.indexOf(yanswer), 1);
+    event.splice(event.indexOf(yanswer), 1);
   }
   document.getElementById("answer").value = "";
   audio("correct");
