@@ -4,7 +4,7 @@
 
 h1 {
   text-align: center !important;
-  font-size: 10vh;
+  font-size: 10vmin;
   font-weight: 700;
   font-family: "Noto Sans JP";
   color: #fff;
@@ -22,7 +22,7 @@ li{
 
 p{
   font-family: "Noto Sans JP";
-  font-size: 3vh;
+  font-size: 3vmin;
   font-weight: 600;
   color: #fff;
   display:block;
@@ -30,7 +30,7 @@ p{
 }
 
 ul{
-  width:60vh;
+  width:60vmin;
   margin:0 auto;
   padding:0;
 }
@@ -38,13 +38,13 @@ ul{
 input{
   font-family: "Noto Sans JP";
   width:100%;
-  font-size: 2vh;
+  font-size: 2vmin;
   font-weight: 600;
   text-align: center;
   vertical-align: middle;
-  padding: 1vh;
-  margin-bottom:3vh;
-  border: 0.75vh solid;
+  padding: 1vmin;
+  margin-bottom:3vmin;
+  border: 0.75vmin solid;
   border-radius: 1000px;
   background-color: transparent;
   border-color: #fff;
@@ -65,21 +65,21 @@ input[type="number"] {
   height: 100%;
   background-color: #e45a22;
   align-items: center;
-  padding:10vh 0;
+  padding:10vmin 0;
 }
 
 .button {
   font-family: "Noto Sans JP";
-  font-size: 2vh;
+  font-size: 2vmin;
   font-weight: 600;
   cursor: pointer;
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
-  width: 60vh;
-  padding: 1vh;
-  margin:10vh auto;
-  border: 0.75vh solid;
+  width: 60vmin;
+  padding: 1vmin;
+  margin:10vmin auto;
+  border: 0.75vmin solid;
   border-radius: 1000px;
   display: block;
   transition: color, background-color 0.5s;
@@ -100,16 +100,16 @@ input[type="number"] {
 
 .icon img{
   transform:0 0;
-  height:10vh;
+  height:10vmin;
   position: fixed;
-  top: 5vh;
-  left: 5vh;
+  top: 5vmin;
+  left: 5vmin;
 }
 
 h5{
   text-align: center;
   font-family: "Noto Sans JP";
-  font-size: 2vh;
+  font-size: 2vmin;
   font-weight: 600;
   color: #fff;
 }
@@ -117,10 +117,10 @@ h5{
 .link{
   text-align: center;
   font-family: "Noto Sans JP";
-  font-size: 2vh;
+  font-size: 2vmin;
   font-weight: 600;
   color: #fff;
-  margin-top:10vh;
+  margin-top:10vmin;
 }
 
 .link a{
