@@ -4,7 +4,7 @@
 
 h1 {
   text-align: center !important;
-  font-size: 10vh;
+  font-size: 10vmin;
   font-weight: 700;
   font-family: "Noto Sans JP";
   color: #fff;
@@ -13,7 +13,7 @@ h1 {
 
 h2 {
   text-align: center !important;
-  font-size: 5vh;
+  font-size: 5vmin;
   font-weight: 700;
   font-family: "Noto Sans JP";
   color: #fff;
@@ -31,7 +31,7 @@ li {
 
 p {
   font-family: "Noto Sans JP";
-  font-size: 3vh;
+  font-size: 3vmin;
   font-weight: 600;
   color: #fff;
   display: block;
@@ -40,15 +40,15 @@ p {
 
 input {
   font-family: "Noto Sans JP";
-  font-size: 2vh;
+  font-size: 2vmin;
   font-weight: 600;
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
-  width: 60vh;
-  padding: 1vh;
-  margin: 10vh auto;
-  border: 0.75vh solid;
+  width: 60vmin;
+  padding: 1vmin;
+  margin: 10vmin auto;
+  border: 0.75vmin solid;
   border-radius: 1000px;
   display: block;
   transition: color, background-color 0.5s;
@@ -69,24 +69,24 @@ input[type="number"] {
 
 .main {
   width: 100vw;
-  height: 100vh;
+  height: 100vmin;
   background-color: #e45a22;
   align-items: center;
-  padding: 10vh 0;
+  padding: 10vmin 0;
 }
 
 .button {
   font-family: "Noto Sans JP";
-  font-size: 2vh;
+  font-size: 2vmin;
   font-weight: 600;
   cursor: pointer;
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
-  width: 30vh;
-  padding: 1vh;
-  margin: 0vh 1vh 10vh 1vh;
-  border: 0.75vh solid;
+  width: 30vmin;
+  padding: 1vmin;
+  margin: 0vmin 1vmin 10vmin 1vmin;
+  border: 0.75vmin solid;
   border-radius: 1000px;
   display: inline-block;
   transition: color, background-color 0.5s;
@@ -107,16 +107,16 @@ input[type="number"] {
 
 .icon img {
   transform: 0 0;
-  height: 10vh;
+  height: 10vmin;
   position: fixed;
-  top: 5vh;
-  left: 5vh;
+  top: 5vmin;
+  left: 5vmin;
 }
 
 h5 {
   text-align: center;
   font-family: "Noto Sans JP";
-  font-size: 2vh;
+  font-size: 2vmin;
   font-weight: 600;
   color: #fff;
 }
@@ -134,16 +134,16 @@ input[type="checkbox"] {
 
 label {
   font-family: "Noto Sans JP";
-  font-size: 2vh;
+  font-size: 2vmin;
   font-weight: 600;
   cursor: pointer;
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
-  width: 30vh;
-  padding: 1vh;
-  margin: 0vh 1vh 10vh 1vh;
-  border: 0.75vh solid;
+  width: 30vmin;
+  padding: 1vmin;
+  margin: 0vmin 1vmin 10vmin 1vmin;
+  border: 0.75vmin solid;
   border-radius: 1000px;
   display: inline-block;
   transition: color, background-color 0.5s;
