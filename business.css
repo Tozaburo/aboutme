@@ -1,6 +1,6 @@
 h1 {
   text-align: center !important;
-  font-size: 10vh;
+  font-size: 10vmin;
   font-weight: 700;
   font-family: "Noto Sans JP";
   color: #fff;
@@ -13,7 +13,7 @@ body {
 
 .main {
   width: 100%;
-  height: 100vh;
+  height: 100vmin;
   background-color: #e45a22;
   display: flex;
   align-items: center;
@@ -25,16 +25,16 @@ body {
 
 .button {
   font-family: "Noto Sans JP";
-  font-size: 2vh;
+  font-size: 2vmin;
   font-weight: 600;
   cursor: pointer;
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
-  width: 60vh;
-  padding: 1vh;
-  margin:2vh auto;
-  border: 0.75vh solid;
+  width: 60vmin;
+  padding: 1vmin;
+  margin:2vmin auto;
+  border: 0.75vmin solid;
   border-radius: 1000px;
   display: block;
   transition: color, background-color 0.5s;
@@ -59,8 +59,8 @@ body {
 
 .icon img{
   transform:0 0;
-  height:10vh;
+  height:10vmin;
   position: fixed;
-  top: 5vh;
-  left: 5vh;
+  top: 5vmin;
+  left: 5vmin;
 }
