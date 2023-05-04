@@ -65,10 +65,16 @@ body {
   margin: auto;
 }
 
-.icon img{
-  transform:0 0;
-  height:10vmin;
+.icon a {
+  transform: 0 0;
   position: fixed;
   top: 5vmin;
   left: 5vmin;
+  font-family: "Noto Sans JP";
+  font-size: 10vmin;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
 }
