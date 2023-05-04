@@ -53,10 +53,8 @@ function clang() {
       <a href="https://amazon.jp/dp/4315525693/" class="ref">Newton ゼロからわかる統計と確率</a>
     </div>
     <div class="icon">
-      <a href="https://tozaburo.github.io/aboutme/">
-        <img src="home.png" alt="">
-      </a>
-    </div>
+        <a href="https://tozaburo.github.io/aboutme/">🏠</a>
+      </div>
     `;
   }
 }
