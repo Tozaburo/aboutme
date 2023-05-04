@@ -109,10 +109,8 @@ function clang() {
       </div>
     </div>
     <div class="icon">
-      <a href="https://tozaburo.github.io/aboutme/">
-        <img src="home.png" alt="">
-      </a>
-    </div>
+        <a href="https://tozaburo.github.io/aboutme/">🏠</a>
+      </div>
     `;
   }
 }
