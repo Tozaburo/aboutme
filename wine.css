@@ -98,14 +98,6 @@ input[type="number"] {
   text-align: center;
 }
 
-.icon img{
-  transform:0 0;
-  height:10vmin;
-  position: fixed;
-  top: 5vmin;
-  left: 5vmin;
-}
-
 h5{
   text-align: center;
   font-family: "Noto Sans JP";
@@ -131,4 +123,18 @@ h5{
 .link a:hover{
   text-decoration:underline;
   color: #fff;
+}
+
+.icon a {
+  transform: 0 0;
+  position: fixed;
+  top: 5vmin;
+  left: 5vmin;
+  font-family: "Noto Sans JP";
+  font-size: 10vmin;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
 }
