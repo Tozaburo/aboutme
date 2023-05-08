@@ -19,9 +19,8 @@ body {
   text-align: center;
   font-family: "Foldit", cursive;
   font-weight: 600;
-  color: #000;
+  color: #fff;
   display: none;
-  m-top: 3vmin;
   z-index: 100;
   position: fixed;
 }
