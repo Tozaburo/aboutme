@@ -1,27 +1,43 @@
-h1 {
-  text-align: center !important;
-  font-size: 10vmin;
-  font-weight: 700;
-  font-family: "Noto Sans JP";
-  color: #fff;
-}
-
 body {
   margin: 0;
   padding: 0;
 }
 
-.main {
-  width: 100%;
-  height: 100vmin;
-  min-height: 100vh;
-  background-color: #e45a22;
-  display: flex;
-  align-items: center;
+h1 {
+  color: #fff;
+  font-family: "Noto Sans JP";
+  font-size: 10vmin;
+  font-weight: 700;
+  text-align: center !important;
 }
 
-.text {
+.button, .comingsoon {
+  background-color: transparent;
+  border-color: #fff;
+  border-radius: 1000px;
+  border: 0.75vmin solid;
+  color: #fff;
+  display: block;
+  font-family: "Noto Sans JP";
+  font-size: 2vmin;
+  font-weight: 600;
+  margin:2vmin auto;
+  padding: 1vmin;
+  text-align: center;
+  text-decoration: none;
+  transition: color, background-color 0.5s;
+  vertical-align: middle;
+  width: 60vmin;
+}
+
+.button-list {
   margin: auto;
+}
+
+.button:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #e45a22;
 }
 
 .button{
@@ -32,49 +48,33 @@ body {
   cursor: default;
 }
 
-.button, .comingsoon {
+.icon a {
+  cursor: pointer;
   font-family: "Noto Sans JP";
-  font-size: 2vmin;
+  font-size: 10vmin;
   font-weight: 600;
+  left: 5vmin;
+  position: fixed;
   text-align: center;
-  vertical-align: middle;
   text-decoration: none;
-  width: 60vmin;
-  padding: 1vmin;
-  margin:2vmin auto;
-  border: 0.75vmin solid;
-  border-radius: 1000px;
-  display: block;
-  transition: color, background-color 0.5s;
-  background-color: transparent;
-  border-color: #fff;
-  color: #fff;
+  top: 5vmin;
+  transform: 0 0;
+  vertical-align: middle;
 }
 
-.button:hover {
-  background-color: #fff;
-  border-color: #fff;
-  color: #e45a22;
+.main {
+  align-items: center;
+  background-color: #e45a22;
+  display: flex;
+  height: 100vmin;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.text {
+  margin: auto;
 }
 
 .title {
   margin: auto;
-}
-
-.button-list {
-  margin: auto;
-}
-
-.icon a {
-  transform: 0 0;
-  position: fixed;
-  top: 5vmin;
-  left: 5vmin;
-  font-family: "Noto Sans JP";
-  font-size: 10vmin;
-  font-weight: 600;
-  cursor: pointer;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
 }
