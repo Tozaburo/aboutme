@@ -3,7 +3,9 @@ var arrow = [];
 var camloc = 0;
 var inventory = 0;
 
-dec();
+window.addEventListener("DOMContentLoaded", function () {
+  dec();
+});
 
 function left() {
   camloc -= 1;
