@@ -224,15 +224,15 @@ function keydown_ivent(e) {
   }
 }
 
-function command() {
-  var commandInput = prompt("Enter a command...");
-  if (commandInput == "gameClear()") {
-    gameClear();
-  } else if (commandInput.includes("setPiece")) {
-    commandInput = commandInput.replace("setPiece(", "");
-    commandInput = commandInput.replace(")", "");
-    piece = commandInput.split(", ");
-    console.log(piece);
-    dec();
-  }
-}
+// function command() {
+//   var commandInput = prompt("Enter a command...");
+//   if (commandInput == "gameClear()") {
+//     gameClear();
+//   } else if (commandInput.includes("setPiece")) {
+//     commandInput = commandInput.replace("setPiece(", "");
+//     commandInput = commandInput.replace(")", "");
+//     piece = commandInput.split(", ");
+//     console.log(piece);
+//     dec();
+//   }
+// }
