@@ -1,10 +1,16 @@
 var piece = [[1, 2, 3, 4], [], []];
+var arrow = [];
 var camloc = 0;
 var inventory = 0;
+
+dec();
 
 function left() {
   camloc -= 1;
   clampCamloc();
+
+  arrow.push("left");
+
   document.querySelector(".left").animate(
     {
       borderWidth: ["3vmin 3vmin 3vmin 0"],
@@ -37,6 +43,9 @@ function left() {
 function right() {
   camloc += 1;
   clampCamloc();
+
+  arrow.push("right");
+
   document.querySelector(".right").animate(
     {
       borderWidth: ["3vmin 0 3vmin 3vmin"],
@@ -72,6 +81,8 @@ function up() {
     piece[camloc].splice(0, 1);
   }
 
+  arrow.push("up");
+
   document.querySelector(".up").animate(
     {
       borderWidth: ["0 3vmin 3vmin 3vmin"],
@@ -106,6 +117,8 @@ function down() {
     piece[camloc].unshift(inventory);
     inventory = 0;
   }
+
+  arrow.push("down");
 
   document.querySelector(".down").animate(
     {
@@ -158,6 +171,21 @@ function dec() {
   if (piece[2].length == 4) {
     gameClear();
   }
+
+  // if (String(arrow) == "up,down,up,down,left,right,up,up,right,right") {
+  //   command()
+  // }
+  document.querySelector(".left").style.borderColor =
+    "transparent #202020 transparent transparent";
+  document.querySelector(".right").style.borderColor =
+    "transparent transparent transparent #202020";
+  if (camloc == 0) {
+    document.querySelector(".left").style.borderColor =
+      "transparent #de1d1d transparent transparent";
+  } else if (camloc == 2) {
+    document.querySelector(".right").style.borderColor =
+      "transparent transparent transparent #de1d1d";
+  }
 }
 
 function gameClear() {
@@ -191,5 +219,18 @@ function keydown_ivent(e) {
     case "ArrowRight":
       right();
       break;
+  }
+}
+
+function command() {
+  var commandInput = prompt("Enter a command...");
+  if (commandInput == "gameClear()") {
+    gameClear();
+  } else if (commandInput.includes("setPiece")) {
+    commandInput = commandInput.replace("setPiece(", "");
+    commandInput = commandInput.replace(")", "");
+    piece = commandInput.split(", ");
+    console.log(piece);
+    dec();
   }
 }
