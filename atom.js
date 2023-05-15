@@ -4,7 +4,6 @@ var url = location.href;
 
 var query = url.replace("https://tozaburo.github.io/aboutme/atom?", "");
 var query = query.split(",");
-var query = Number(query);
 // var query = 10;
 
 function draw() {
@@ -148,7 +147,7 @@ function rec(loc1, loc2, mode, index) {
     loc1 = loc1 * (canvaswidth / 20);
     loc2 = loc2 * (canvaswidth / 20);
 
-    if (query == index) {
+    if (query.includes(String(index))) {
         var alpha = 0.5;
     } else {
         var alpha = 0.075;
@@ -171,7 +170,7 @@ function rec(loc1, loc2, mode, index) {
     ctx.textAlign = 'center';
     ctx.fillText(symbol[index], loc1 + (canvaswidth / 40), loc2 + (canvaswidth / 27.5));
 
-    if (query == index) {
+    if (query.includes(String(index))) {
         ctx.strokeStyle = 'rgba(255, 0, 0, 1)';
         ctx.lineWidth = 2;
     } else {
