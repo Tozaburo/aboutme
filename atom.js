@@ -179,4 +179,6 @@ function rec(loc1, loc2, mode, index) {
     }
 
     ctx.strokeRect(loc1 + (ctx.lineWidth / 2), loc2 + (ctx.lineWidth / 2), ((canvaswidth / 20) - ctx.lineWidth), ((canvaswidth / 20) - ctx.lineWidth));
+
+    location.href = canvas.toDataURL("image/png");
 }
