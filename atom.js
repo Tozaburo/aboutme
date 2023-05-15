@@ -3,6 +3,7 @@ symbol = ["", "H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne", "Na", "Mg", 
 var url = location.href;
 
 var query = Number(url.replace("https://tozaburo.github.io/aboutme/atom?", ""));
+var query = query.split(,);
 // var query = 10;
 
 function draw() {
