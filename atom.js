@@ -6,6 +6,10 @@ var query = url.replace("https://tozaburo.github.io/aboutme/atom?", "");
 // var query = "10,12";
 var query = query.split(",");
 
+window.addEventListener("DOMContentLoaded", function () {
+    draw();
+});
+
 function draw() {
     // var canvas = document.getElementById('canvas');
     // if (canvas.getContext) {
