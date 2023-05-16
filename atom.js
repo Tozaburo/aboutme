@@ -355,5 +355,5 @@ function newsvg(loc1, loc2, mode, alpha, index) {
     } else {
         var opacity = "0.15";
     }
-    document.querySelector("#svg").innerHTML = document.querySelector("#svg").innerHTML + `<text x=` + (loc1 + canvaswidth / 40) + ` y=` + (loc2 + canvaswidth / 29) + ` font-family="Verdana" font-size="20" text-anchor="middle" opacity=` + opacity + `>` + symbol[index] + `</text>`;
+    document.querySelector("#svg").innerHTML = document.querySelector("#svg").innerHTML + `<text x=` + (loc1 + canvaswidth / 40) + ` y=` + (loc2 + canvaswidth / 29) + ` font-family="Be Vietnam Pro" font-size="20" text-anchor="middle" opacity=` + opacity + `>` + symbol[index] + `</text>`;
 }
