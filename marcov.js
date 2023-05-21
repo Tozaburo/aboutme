@@ -1,16 +1,23 @@
 var stringsentence = "";
 var splitstr = "";
 var sentence = stringsentence.split(splitstr);
-var start = "メロス";
+var start = "";
 var result = [start];
 var lastWord = start;
 var started = 0;
 
 function startgen() {
     changeS();
-    stringsentence = document.querySelector("#data").value;
-    splitstr = document.querySelector("#split").value;
-    sentence = stringsentence.split(splitstr);
+    if (started == 1){
+        stringsentence = document.querySelector("#data").value;
+        stringsentence = stringsentence.replace(/\n/g, '');
+        splitstr = document.querySelector("#split").value;
+        sentence = stringsentence.split(splitstr);
+        start = sentence[0];
+        result = [start];
+        lastWord = start;
+        console.log(lastWord);
+    }
     let sg = setInterval(() => {
         makeSentence();
         if (started == 0) {
