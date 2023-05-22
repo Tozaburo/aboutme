@@ -90,7 +90,6 @@ function randomNumber(min, max) {
 }
 
 function setLevel(set) {
-    level = set;
     if (set == 1) {
         document.getElementById("one").classList.add("emphasize");
         document.getElementById("two").classList.remove("emphasize");
@@ -104,4 +103,5 @@ function setLevel(set) {
         document.getElementById("two").classList.remove("emphasize");
         document.getElementById("three").classList.add("emphasize");
     }
+    level = set;
 }
