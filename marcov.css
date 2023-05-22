@@ -3,7 +3,6 @@ a {
     border: 0.4vmin solid #a0a0a0;
     box-sizing: border-box;
     cursor: pointer;
-    display: block;
     font-family: "Noto Sans JP", sans-serif;
     font-size: 3vmin;
     font-weight: 500;
@@ -15,7 +14,35 @@ a {
     text-align: center;
     transition: border 0.1s;
     vertical-align: middle;
-    width: 100vmin;
+}
+
+.emphasize {
+    background-color: #3484d5;
+    color: white;
+}
+
+a:not(.emphasize) {
+    color: black;
+    background-color: white;
+}
+
+.ver {
+    display: block;
+    width: 90vmin;
+}
+
+.hor {
+    /* display: inline-block; */
+    width: 30vmin;
+    margin: 0 1vmin;
+    flex-wrap: nowrap;
+}
+
+.accuracy {
+    width: 92vmin;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 a:active {
@@ -68,7 +95,7 @@ p {
     padding: 2vmin;
     resize: none;
     transition: border 0.1s;
-    width: 100vmin;
+    width: 90vmin;
 }
 
 textarea {
@@ -78,7 +105,6 @@ textarea {
 input {
     height: 2vmin;
 }
-
 
 .input:focus {
     border: 0.4vmin solid #3484d5;
@@ -96,7 +122,7 @@ input {
     font-family: "Noto Sans JP", sans-serif;
     font-size: 2vmin;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
     margin-top: 10vmin;
     width: 80vmin;
     margin: 0 auto;
