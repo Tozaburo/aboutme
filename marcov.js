@@ -8,7 +8,7 @@ var started = 0;
 var level = 2;
 
 window.addEventListener("DOMContentLoaded", function () {
-    setLevel(1);
+    setLevel(2);
 });
 
 function startgen() {
