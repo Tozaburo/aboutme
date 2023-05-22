@@ -4,8 +4,8 @@ var sentence = stringsentence.split(splitstr);
 var start = "";
 var result = [start];
 var lastWord = start;
-var started = 0;
 var level = 2;
+var started = 0;
 
 window.addEventListener("DOMContentLoaded", function () {
     setLevel(2);
