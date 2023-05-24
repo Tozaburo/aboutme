@@ -4,8 +4,8 @@ var sentence = stringsentence.split(splitstr);
 var start = "";
 var result = [start];
 var lastWord = start;
-var level = 2;
 var started = 0;
+var level = 2;
 
 window.addEventListener("DOMContentLoaded", function () {
     setLevel(2);
@@ -27,7 +27,7 @@ function startgen() {
         if (started == 0) {
             clearInterval(sg);
         }
-    }, 1);
+    }, slider);
 }
 
 function changeS() {
@@ -69,7 +69,29 @@ function next(text) {
 
         last = sentence.indexOf(text, last) + 1;
     }
+    var shrinked = 0;
     result.push(candidate[randomNumber(0, candidate.length - 1)]);
+    if (candidate.length > 3) {
+        candidate.length = 3;
+        shrinked = 1;
+    }
+    var tree = "";
+    for (var i = 0; i < candidate.length; i++) {
+        tree += "<li"
+        if (candidate.indexOf(result[result.length - 1]) == i) {
+            tree += ' class="red">'
+        } else {
+            tree += ">";
+        }
+        if (i == 3 && shrinked == 1) {
+            tree += candidate[i] + "...";
+        } else {
+            tree += candidate[i];
+        }
+        tree += '</li>';
+    }
+    document.querySelector("#tree").innerHTML = tree;
+    document.querySelector("#last").innerHTML = text;
 }
 
 function numberOf(ch, str) {
@@ -105,3 +127,13 @@ function setLevel(set) {
     }
     level = set;
 }
+
+var slider = -1;
+var speed = 1;
+setInterval(() => {
+    if (slider != document.querySelector("#speed").value) {
+        slider = document.querySelector("#speed").value;
+        speed = slider;
+        document.querySelector("#speedlabel").innerHTML = "文章生成のスピード = 1単語 / " + slider + "ms";
+    }
+}, 1)
