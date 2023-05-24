@@ -132,7 +132,7 @@ input {
     height: 20vmin;
     display: flex;
     width: 50vmin;
-    margin-left: 40vmin;
+    margin: 0 auto;
 }
 
 ul {
