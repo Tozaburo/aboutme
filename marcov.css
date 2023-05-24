@@ -127,3 +127,90 @@ input {
     width: 80vmin;
     margin: 0 auto;
 }
+
+#list {
+    height: 20vmin;
+    display: flex;
+    width: 50vmin;
+    margin-left: 40vmin;
+}
+
+ul {
+    height: 90vmin;
+}
+
+li {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 4vmin;
+    font-weight: 500;
+    list-style: none;
+    margin-left: 10vmin;
+}
+
+.red {
+    color: red;
+}
+
+
+p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 4vmin;
+    font-weight: 500;
+    list-style: none;
+    margin-top: 7vmin;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+    height: 0vmin;
+    width: 90vmin;
+    border-radius: 10000px;
+    border: solid 0.2vmin #a0a0a0;
+    outline: 0;
+    margin: 0 auto 10vmin auto;
+    box-sizing: border-box;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 2vmin;
+    height: 2vmin;
+    margin-top: 0;
+    background-color: #3484d5;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 2vmin;
+    height: 2vmin;
+    margin-top: 0;
+    background-color: #3484d5;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider::-ms-thumb {
+    width: 2vmin;
+    height: 2vmin;
+    margin-top: 0;
+    background-color: #3484d5;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    -webkit-appearance: none;
+    background-color: #33d675;
+}
+
+.slider::-moz-range-thumb:hover {
+    background-color: #33d675;
+}
+
+.slider::-ms-thumb:hover {
+    background-color: #33d675;
+}
