@@ -1,0 +1,87 @@
+a {
+    border-radius: 1vmin;
+    border: 0.4vmin solid #a0a0a0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 3vmin;
+    font-weight: 500;
+    height: 9vmin;
+    margin: 2vmin auto;
+    outline: none;
+    padding: 2vmin;
+    resize: none;
+    text-align: center;
+    transition: border 0.1s;
+    vertical-align: middle;
+    width: 100vmin;
+}
+
+a:active {
+    border: 0.5vmin solid #3484d5;
+}
+
+a:hover {
+    border: 0.5vmin solid #a0a0a0;
+}
+
+h1 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 10vmin;
+    font-weight: 600;
+    text-align: center;
+}
+
+h2 span {
+    font-family: "Noto Color Emoji", sans-serif;
+}
+
+h2 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 6vmin;
+    font-weight: 600;
+    text-align: center;
+}
+
+p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 3vmin;
+    font-weight: 200;
+    text-align: center;
+}
+
+.inoutput {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    border-radius: 1vmin;
+    border: 0.4vmin solid #a0a0a0;
+    box-sizing: border-box;
+    font-family: "Inconsolata", monospace;
+    font-size: 2.5vmin;
+    height: 50vmin;
+    margin: 2vmin auto;
+    outline: none;
+    padding: 2vmin;
+    resize: none;
+    transition: border 0.1s;
+    width: 100vmin;
+}
+
+.input:focus {
+    border: 0.5vmin solid #3484d5;
+}
+
+.input:hover {
+    border: 0.5vmin solid #a0a0a0;
+}
+
+.small {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 2vmin;
+    font-weight: 200;
+    text-align: center;
+}
