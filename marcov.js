@@ -23,10 +23,10 @@ function startgen() {
         lastWord = start;
     }
     let sg = setInterval(() => {
-        makeSentence();
         if (started == 0) {
             clearInterval(sg);
         }
+        makeSentence();
     }, slider);
 }
 
@@ -76,6 +76,10 @@ function next(text) {
         shrinked = 1;
     }
     var tree = "";
+
+    const set = new Set(candidate);
+    candidate = [...set];
+
     for (var i = 0; i < candidate.length; i++) {
         tree += "<li"
         if (candidate.indexOf(result[result.length - 1]) == i) {
