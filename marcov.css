@@ -1,4 +1,16 @@
-a {
+.link {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 2vmin;
+    font-weight: 500;
+    text-align: center;
+    width: 90vmin;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+a:not(.link) {
     border-radius: 1vmin;
     border: 0.4vmin solid #a0a0a0;
     box-sizing: border-box;
@@ -15,6 +27,7 @@ a {
     transition: border 0.1s;
     vertical-align: middle;
 }
+
 
 .emphasize {
     background-color: #3484d5;
@@ -45,11 +58,11 @@ a:not(.emphasize) {
     flex-wrap: nowrap;
 }
 
-a:active {
+a:not(.link):active {
     border: 0.5vmin solid #3484d5;
 }
 
-a:hover {
+a:not(.link):hover {
     border: 0.5vmin solid #a0a0a0;
 }
 
