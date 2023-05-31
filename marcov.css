@@ -43,7 +43,6 @@ a:not(.emphasize) {
 }
 
 .hor {
-    /* display: inline-block; */
     width: 30vmin;
     margin: 0 1vmin;
     flex-wrap: nowrap;
