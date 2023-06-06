@@ -1,0 +1,158 @@
+.main {
+    width: 100vmin;
+    margin: 0 auto;
+}
+
+.content {
+    margin: 0 auto;
+}
+
+h1:not(#kanji) {
+    color: black;
+    font-size: 7.5vmin;
+    font-family: 'Klee One', cursive;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    margin-top: 10vmin;
+}
+
+h2 {
+    color: black;
+    font-size: 3vmin;
+    font-family: 'Klee One', cursive;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    font-size: 2vmin;
+    font-family: 'Klee One', cursive;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+}
+
+h4 {
+    color: black;
+    font-size: 1.5vmin;
+    font-family: 'Klee One', cursive;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+}
+
+#kanji {
+    color: black;
+    font-size: 20vmin;
+    display: inline-block;
+    font-family: 'Klee One', cursive;
+    font-weight: 600;
+    margin-left: 10vmin;
+    transform: scaleX(0.4);
+}
+
+.big {
+    color: black;
+    font-size: 10vmin;
+    transform: scaleX(0.4);
+    display: inline-block;
+    font-family: 'Klee One', cursive;
+    font-weight: 600;
+    margin-left: 10vmin;
+    text-decoration: none;
+}
+
+.link,
+p {
+    color: black;
+    font-size: 2.5vmin;
+    display: block;
+    font-family: 'Klee One', cursive;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a:not(.button, .input):hover {
+    font-weight: 600;
+}
+
+.detail {
+    display: inline-block;
+}
+
+.box {
+    border: 0.5vmin solid;
+    border-color: black;
+    padding: 1vmin;
+    display: flex;
+}
+
+.button {
+    background-color: transparent;
+    color: black;
+    font-family: 'Klee One', cursive;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 2.5vmin;
+    display: block;
+    border: 0.25vmin solid;
+    border-radius: 1vmin;
+    border-color: black;
+    padding: 1vmin;
+    width: 10vmin;
+    text-align: center;
+    margin: 1vmin auto;
+}
+
+.input {
+    background-color: transparent;
+    color: black;
+    font-family: 'Klee One', cursive;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 2.5vmin;
+    display: block;
+    border: 0.25vmin solid;
+    border-radius: 1vmin;
+    border-color: black;
+    padding: 0.75vmin;
+    width: 10vmin;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin: 1vmin;
+}
+
+input {
+    background-color: transparent;
+    color: black;
+    font-family: 'Klee One', cursive;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 2.5vmin;
+    display: block;
+    height: 5vmin;
+    border: 0.25vmin solid;
+    border-radius: 1vmin;
+    border-color: black;
+    padding-left: 1vmin;
+    width: 50vmin;
+    margin: 1vmin;
+}
+
+.search {
+    margin: 2vmin auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.center{
+    margin: 0 auto;
+}
