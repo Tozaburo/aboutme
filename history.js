@@ -6,13 +6,13 @@ if (url == "https://tozaburo.github.io/aboutme/history"){
   location.href = "https://tozaburo.github.io/aboutme/history?"
 }
 
-var event = [];
+var incident = [];
 
 if (squery.indexOf("important") != -1) {
   window.addEventListener("DOMContentLoaded", function () {
     document.getElementById("important").checked = true;
   });
-  event.push(
+  incident.push(
     ["604", "十七条の憲法が施行される"],
     ["645", "中大兄皇子と中臣鎌足が大化の改新を行う"],
     ["701", "大宝律令が制定される"],
@@ -49,7 +49,7 @@ if (squery.indexOf("important") != -1) {
     ["1615", "武家諸法度（元和令）が制定される"],
     ["1615", "禁中並公家諸法度が制定される"],
     ["1637", "島原・天草一揆（島原の乱）が起こる"],
-    ["1638", "ポルトガル船の来航が禁止される"],
+    ["1639", "ポルトガル船の来航が禁止される"],
     ["1837", "大塩の乱が起こる"],
     ["1837", "モリソン号事件が起こる"],
     ["1853", "ペリーが浦賀に来航する"],
@@ -137,7 +137,7 @@ if (squery.indexOf("basic") != -1) {
   window.addEventListener("DOMContentLoaded", function () {
     document.getElementById("basic").checked = true;
   });
-  event.push(
+  incident.push(
     ["538", "百済の聖明王が仏教を伝える"],
     ["593", "聖徳太子が推古天皇の摂政となる"],
     ["603", "冠位十二階が制定される"],
@@ -217,7 +217,7 @@ if (squery.indexOf("advanced") != -1) {
   window.addEventListener("DOMContentLoaded", function () {
     document.getElementById("advanced").checked = true;
   });
-  event.push(
+  incident.push(
     ["57", "奴国王が後漢に使いを送り、金印を授かる"],
     ["239", "卑弥呼が魏に使いを送る"],
     ["694", "持統天皇が藤原京に遷都する"],
@@ -277,9 +277,9 @@ function random(min, max) {
 
 function newQuiz() {
   hadHint = 0;
-  pnum = random(0, event.length);
-  answer = event[pnum][0];
-  document.getElementById("question").textContent = event[pnum][1];
+  pnum = random(0, incident.length);
+  answer = incident[pnum][0];
+  document.getElementById("question").textContent = incident[pnum][1];
 }
 
 function check() {
@@ -293,7 +293,7 @@ function check() {
 
 function correct() {
   if (hadHint == 0) {
-    event.splice(event.indexOf(yanswer), 1);
+    incident.splice(incident.indexOf(yanswer), 1);
   }
   document.getElementById("answer").value = "";
   audio("correct");
