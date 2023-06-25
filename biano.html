@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <script src="http://unpkg.com/tone"></script>
+    <link rel="stylesheet" href="biano.css" />
+    <script src="biano.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <title>BIANO</title>
+    <meta name="description" content='This is a relative piano: " Biano". The name comes from "Binary" and "Piano" .
+        Biano works by pressing a keyboard key or by touching a button. Initially, the note is "C4" . If you want to
+        play "D4" , you press the "W" key. If you want to play "G4" , you press the "Q" , "W" , "E" keys. To repeat the
+        same note, press the "Q" , "A" keys. Click the "◀" or "▶" buttons to change the instrument.' />
+    <meta name="keywords" content="piano,binary,relative" />
+    <meta property="og:title" content="BIANO" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tozaburo.github.io/aboutme/biano" />
+    <meta property="og:description" content='This is a relative piano: " Biano". The name comes from "Binary"
+        and "Piano" . Biano works by pressing a keyboard key or by touching a button. Initially, the note is "C4" . If
+        you want to play "D4" , you press the "W" key. If you want to play "G4" , you press the "Q" , "W" , "E" keys. To
+        repeat the same note, press the "Q" , "A" keys. Click the "◀" or "▶" buttons to change the instrument.' />
+    <meta property="og:site_name" content="BIANO" />
+    <meta name="subject" content="New piano." />
+    <meta name="abstract" content="New piano." />
+    <meta name="author" content="Tozaburo" />
+    <meta name="owner" content="Tozaburo" />
+
+</head>
+
+
+
+<body>
+    <div class="main">
+        <p class="display" id="scale">C4</p>
+        <div class="button">
+            <a onclick="changeInstrument(-1)" class="leftright" id="left">◀</a>
+            <div class="updownbutton">
+                <div class="horizontalbutton">
+                    <a onclick="note(1)" class="updown" id="Q">+1<span>Q</span></a>
+                    <a onclick="note(2)" class="updown" id="W">+2<span>W</span></a>
+                    <a onclick="note(4)" class="updown" id="E">+4<span>E</span></a>
+                    <a onclick="note(8)" class="updown" id="R">+8<span>R</span></a>
+                    <a onclick="note(16)" class="updown" id="T">+16<span>T</span></a>
+                    <a onclick="note(32)" class="updown" id="Y">+32<span>Y</span></a>
+                    <a onclick="note(64)" class="updown" id="U">+64<span>U</span></a>
+                </div>
+                <div class="horizontalbutton">
+                    <a onclick="note(-1)" class="updown" id="A">-1<span>A</span></a>
+                    <a onclick="note(-2)" class="updown" id="S">-2<span>S</span></a>
+                    <a onclick="note(-4)" class="updown" id="D">-4<span>D</span></a>
+                    <a onclick="note(-8)" class="updown" id="F">-8<span>F</span></a>
+                    <a onclick="note(-16)" class="updown" id="G">-16<span>G</span></a>
+                    <a onclick="note(-32)" class="updown" id="H">-32<span>H</span></a>
+                    <a onclick="note(-64)" class="updown" id="J">-64<span>J</span></a>
+                </div>
+            </div>
+            <a onclick="changeInstrument(1)" class="leftright" id="right">▶</a>
+        </div>
+        <p class="display" id="instrument">Piano</p>
+
+        <div class="tab-menu">
+            <div class="tabs">
+                <div class="tab opened" id="tab1">Setting</div>
+                <div class="tab" id="tab2">About this</div>
+                <div class="tab" id="tab3">Log</div>
+                <div class="tabslider"></div>
+            </div>
+            <div class="contents">
+                <div class="content opened" id="content1">
+                    <div class="thresholdslider">
+                        <p class="menu" id="thresholddisplay">keyboard push-threshold : 20ms</p>
+                        <input type="range" min="0" max="100" value="20" class="slider" step="1" id="threshold">
+                    </div>
+                </div>
+                <div class="content" id="content2">
+                    <p class="menu" id="description">This is a relative piano: "Biano". The name comes from "Binary" and
+                        "Piano".<br>
+                        Biano works by pressing a keyboard key or by touching a button.<br>
+                        Initially, the note is "C4". If you want to play "D4", you press the "W" key. If you want to
+                        play "G4", you press the "Q", "W", "E" keys. To repeat the same note, press the "Q", "A"
+                        keys.<br>
+                        Click the "◀" or "▶" buttons to change the instrument.<br>
+                        Enjoy!</p>
+                </div>
+                <div class="content" id="content3">
+
+                    <ul class="menu" id="description">
+                        <li>2023/6/23 - Turning ideas into reality.</li>
+                        <li>2023/6/24 - Sound-playing system completed; 'About This' section written.</li>
+                        <li>2023/6/25 - Fixing a little bug.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
