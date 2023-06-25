@@ -1,0 +1,253 @@
+.updown,
+.leftright {
+    background-color: #895D4F;
+    padding: 1vmin;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4vmin;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-weight: 400;
+    transition: box-shadow 0.2s, color 0.1s;
+    width: 10vmin;
+}
+
+.updown:hover,
+.leftright:hover {
+    box-shadow: 0 1vmin 2vmin 0 #895D4F;
+}
+
+.active {
+    color: #94b0ff;
+}
+
+.display {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5vmin;
+    text-align: center;
+    margin: 2vmin auto;
+    color: white;
+    height: 7.5vmin;
+    width: 105vmin;
+    background-color: #3f4536;
+}
+
+.menu {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vmin;
+    margin: 2vmin auto;
+    color: white;
+    display: inline-block;
+    text-align: left;
+}
+
+.updown {
+    height: 7.5vmin;
+    line-height: 7.5vmin;
+    width: 10vmin;
+    margin: 0.5vmin;
+}
+
+.updown span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vmin;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    padding-left: 1vmin;
+    line-height: 50%;
+}
+
+.leftright {
+    height: 18vmin;
+    line-height: 18vmin;
+    width: 5vmin;
+}
+
+.button {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 20vmin;
+    width: 105vmin;
+}
+
+.horizontalbutton {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 10vmin;
+    width: 90vmin;
+    margin: 0.5vmin auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #7e8a6d;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    width: 105vmin;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+    height: 0vmin;
+    width: 50vmin;
+    border-radius: 10000px;
+    border: solid 0.2vmin #ffffff;
+    outline: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#thresholddisplay {
+    width: 35vmin;
+}
+
+#description {
+    width: 95vmin;
+    overflow-y: scroll;
+    height: 15vmin;
+}
+
+/* thumb */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 2vmin;
+    height: 2vmin;
+    margin-top: 0;
+    background-color: #ffd68f;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 2vmin;
+    height: 2vmin;
+    margin-top: 0;
+    background-color: #ffd68f;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider::-ms-thumb {
+    width: 2vmin;
+    height: 2vmin;
+    margin-top: 0;
+    background-color: #ffd68f;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* thumb-hover */
+.slider::-webkit-slider-thumb:hover {
+    -webkit-appearance: none;
+    background-color: #ff8f8f;
+}
+
+.slider::-moz-range-thumb:hover {
+    background-color: #ff8f8f;
+}
+
+.slider::-ms-thumb:hover {
+    background-color: #ff8f8f;
+}
+
+ul {
+    list-style-type: "- ";
+}
+
+/* tab */
+.tab-menu {
+    width: 105vmin;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vmin;
+}
+
+.tab-menu .tabs {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+.tab-menu .tabs .tab {
+    cursor: pointer;
+    padding: 1.5vmin;
+    background-color: #453636;
+    text-align: center;
+    flex-grow: 1;
+    color: white;
+}
+
+.tab-menu .contents .content {
+    padding: 1.5vmin;
+    display: none;
+}
+
+.tab-menu .tabs .opened {
+    color: #ffc7c7;
+}
+
+.tab-menu .tabs .tabslider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% / 3);
+    height: 0.2vmin;
+    background: #ffc7c7;
+    transition: all 0.3s ease;
+}
+
+.tab-menu .contents .opened {
+    display: block;
+}
+
+.contents {
+    background-color: #8a6d6d;
+}
+
+.content {
+    height: 20vmin;
+    justify-content: center;
+    width: 105vmin;
+    align-items: center;
+    text-align: center;
+}
+
+.thresholdslider {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 20vmin;
+    line-height: 20vmin;
+}
+
+#left {
+    margin-right: 0.5vmin;
+}
+
+#right {
+    margin-left: 0.5vmin;
+}
