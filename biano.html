@@ -18,7 +18,7 @@
     <meta name="description" content='This is a relative piano: " Biano". The name comes from "Binary" and "Piano" .
         Biano works by pressing a keyboard key or by touching a button. Initially, the note is "C4" . If you want to
         play "D4" , you press the "W" key. If you want to play "G4" , you press the "Q" , "W" , "E" keys. To repeat the
-        same note, press the "Q" , "A" keys. Click the "◀" or "▶" buttons to change the instrument.' />
+        same note, press the "Q" , "A" keys.' />
     <meta name="keywords" content="piano,binary,relative" />
     <meta property="og:title" content="BIANO" />
     <meta property="og:type" content="website" />
@@ -26,7 +26,7 @@
     <meta property="og:description" content='This is a relative piano: " Biano". The name comes from "Binary"
         and "Piano" . Biano works by pressing a keyboard key or by touching a button. Initially, the note is "C4" . If
         you want to play "D4" , you press the "W" key. If you want to play "G4" , you press the "Q" , "W" , "E" keys. To
-        repeat the same note, press the "Q" , "A" keys. Click the "◀" or "▶" buttons to change the instrument.' />
+        repeat the same note, press the "Q" , "A" keys.' />
     <meta property="og:site_name" content="BIANO" />
     <meta name="subject" content="New piano." />
     <meta name="abstract" content="New piano." />
@@ -41,7 +41,6 @@
     <div class="main">
         <p class="display" id="scale">C4</p>
         <div class="button">
-            <a onclick="changeInstrument(-1)" class="leftright" id="left">◀</a>
             <div class="updownbutton">
                 <div class="horizontalbutton">
                     <a onclick="note(1)" class="updown" id="Q">+1<span>Q</span></a>
@@ -62,9 +61,7 @@
                     <a onclick="note(-64)" class="updown" id="J">-64<span>J</span></a>
                 </div>
             </div>
-            <a onclick="changeInstrument(1)" class="leftright" id="right">▶</a>
         </div>
-        <p class="display" id="instrument">Piano</p>
 
         <div class="tab-menu">
             <div class="tabs">
@@ -87,7 +84,6 @@
                         Initially, the note is "C4". If you want to play "D4", you press the "W" key. If you want to
                         play "G4", you press the "Q", "W", "E" keys. To repeat the same note, press the "Q", "A"
                         keys.<br>
-                        Click the "◀" or "▶" buttons to change the instrument.<br>
                         Enjoy!</p>
                 </div>
                 <div class="content" id="content3">
