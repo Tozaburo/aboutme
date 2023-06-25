@@ -28,14 +28,14 @@
     margin: 2vmin auto;
     color: white;
     height: 7.5vmin;
-    width: 105vmin;
+    width: 90vmin;
     background-color: #3f4536;
 }
 
 .menu {
     font-family: 'Poppins', sans-serif;
     font-size: 2vmin;
-    margin: 2vmin auto;
+    margin: 1vmin auto;
     color: white;
     display: inline-block;
     text-align: left;
@@ -72,7 +72,8 @@
     -webkit-align-items: center;
     align-items: center;
     height: 20vmin;
-    width: 105vmin;
+    width: 90vmin;
+    margin-bottom: 10vmin;
 }
 
 .horizontalbutton {
@@ -101,7 +102,7 @@ body {
 }
 
 .main {
-    width: 105vmin;
+    width: 90vmin;
 }
 
 .slider {
@@ -110,7 +111,7 @@ body {
     cursor: pointer;
     background-color: transparent;
     height: 0vmin;
-    width: 50vmin;
+    width: 30vmin;
     border-radius: 10000px;
     border: solid 0.2vmin #ffffff;
     outline: 0;
@@ -123,7 +124,7 @@ body {
 }
 
 #description {
-    width: 95vmin;
+    width: 80vmin;
     overflow-y: scroll;
     height: 15vmin;
 }
@@ -177,7 +178,7 @@ ul {
 
 /* tab */
 .tab-menu {
-    width: 105vmin;
+    width: 90vmin;
     margin: auto;
     font-family: 'Poppins', sans-serif;
     font-size: 2vmin;
@@ -228,7 +229,7 @@ ul {
 .content {
     height: 20vmin;
     justify-content: center;
-    width: 105vmin;
+    width: 90vmin;
     align-items: center;
     text-align: center;
 }
@@ -242,6 +243,7 @@ ul {
     align-items: center;
     height: 20vmin;
     line-height: 20vmin;
+    width: 85vmin;
 }
 
 #left {
