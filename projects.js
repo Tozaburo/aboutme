@@ -18,6 +18,8 @@ function clang() {
         <a href="https://tozaburo.github.io/aboutme/file" class="button">Files to Python/JS Lists</a>
         <a href="https://tozaburo.github.io/aboutme/four" class="button">Four</a>
         <a href="https://tozaburo.github.io/aboutme/css" class="button">Organize CSS</a>
+        <a href="https://tozaburo.github.io/aboutme/marcov" class="button">Marcov chaine</a>
+        <a href="https://tozaburo.github.io/aboutme/biano" class="button">Biano</a>
         <p class="comingsoon">Comming soon...</p>
       </div>
     </div>
