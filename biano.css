@@ -1,19 +1,20 @@
-.updown,
-.leftright {
+.updown {
     background-color: #895D4F;
     padding: 1vmin;
     font-family: 'Poppins', sans-serif;
-    font-size: 4vmin;
+    font-size: 2.85vmin;
     text-align: center;
     color: white;
     cursor: pointer;
     font-weight: 400;
     transition: box-shadow 0.2s, color 0.1s;
-    width: 10vmin;
+    height: 7.5vmin;
+    line-height: 7.5vmin;
+    width: 90vmin;
+    margin: 0.5vmin;
 }
 
-.updown:hover,
-.leftright:hover {
+.updown:hover {
     box-shadow: 0 1vmin 2vmin 0 #895D4F;
 }
 
@@ -35,17 +36,11 @@
 .menu {
     font-family: 'Poppins', sans-serif;
     font-size: 2vmin;
-    margin: 1vmin auto;
+    margin: 1vmin 5vmin;
     color: white;
     display: inline-block;
     text-align: left;
-}
-
-.updown {
-    height: 7.5vmin;
-    line-height: 7.5vmin;
-    width: 10vmin;
-    margin: 0.5vmin;
+    width: 40vmin;
 }
 
 .updown span {
@@ -84,7 +79,7 @@
     -webkit-align-items: center;
     align-items: center;
     height: 10vmin;
-    width: 90vmin;
+    width: 91vmin;
     margin: 0.5vmin auto;
 }
 
@@ -117,10 +112,6 @@ body {
     outline: 0;
     box-sizing: border-box;
     margin: 0 auto;
-}
-
-#thresholddisplay {
-    width: 35vmin;
 }
 
 #description {
@@ -234,15 +225,15 @@ ul {
     text-align: center;
 }
 
-.thresholdslider {
+.slidercontainer {
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: center;
     justify-content: center;
     -webkit-align-items: center;
     align-items: center;
-    height: 20vmin;
-    line-height: 20vmin;
+    height: 10vmin;
+    line-height: 10vmin;
     width: 85vmin;
 }
 
@@ -252,4 +243,108 @@ ul {
 
 #right {
     margin-left: 0.5vmin;
+}
+
+
+.context-menu {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    padding: 1.5vmin;
+    background-color: #895D4F;
+    border: 0.2vmin solid white;
+    border-radius: 0.5vmin;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.context-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.context-menu li {
+    cursor: pointer;
+    padding: 0.8vmin;
+}
+
+#contextText {
+    font-size: 2vmin;
+}
+
+.keybordwrapper {
+    width: 75vmin;
+    margin: 0 auto;
+}
+
+.keys {
+    height: 5vmin;
+    margin: calc(5vmin / 6);
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.key {
+    width: 5vmin;
+    height: 5vmin;
+    margin: calc(5vmin / 12);
+    background-color: white;
+    font-size: 2vmin;
+    color: black;
+    border: 0.2vmin solid black;
+    border-radius: 0.5vmin;
+    cursor: pointer;
+}
+
+.key:active {
+    width: 5vmin;
+    height: 5vmin;
+    margin: calc(5vmin / 12);
+    background-color: #50758a;
+    font-size: 2vmin;
+    color: white;
+    border: 0.2vmin solid black;
+    border-radius: 0.5vmin;
+    cursor: pointer;
+}
+
+#keyboardLayoutInput {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: -webkit-flex;
+    display: none;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    z-index: 100000;
+    font-family: 'Poppins', sans-serif;
+}
+
+#wrapper {
+    background-color: white;
+    border-radius: 1vmin;
+    width: 100vmin;
+    height: 50vmin;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#wrapper p {
+    color: black;
+    text-align: center;
+    font-size: 4vmin;
+    margin-top: 0;
+    margin-bottom: 2vmin;
 }
