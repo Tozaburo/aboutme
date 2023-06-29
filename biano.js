@@ -3,6 +3,9 @@ var scale = "C";
 var scaleNum = 4;
 var updownsum = 0;
 var activelist = [];
+var keylist = [["Q", "W", "E", "R", "T", "Y", "U", "I", "O"], ["A", "S", "D", "F", "G", "H", "J", "K", "L"]]
+var activekeylist = [["Q", "W", "E", "R", "T"], ["A", "S", "D", "F", "G"]];
+var number = null;
 
 function note(updown) {
     updownsum += 1;
@@ -43,116 +46,147 @@ document.addEventListener("keydown", keydown_ivent);
 document.addEventListener("keyup", keyup_ivent);
 
 function keydown_ivent(e) {
+    var key = e.code.replace("Key", "");
     switch (e.code) {
-        case "KeyQ":
-            keycase("Q", 1);
+        case "Key" + activekeylist[0][0]:
+            keycase(activekeylist[0][0], 1);
             break;
-        case "KeyW":
-            keycase("W", 2);
+        case "Key" + activekeylist[0][1]:
+            keycase(activekeylist[0][1], 2);
             break;
-        case "KeyE":
-            keycase("E", 4);
+        case "Key" + activekeylist[0][2]:
+            keycase(activekeylist[0][2], 4);
             break;
-        case "KeyR":
-            keycase("R", 8);
+        case "Key" + activekeylist[0][3]:
+            keycase(activekeylist[0][3], 8);
             break;
-        case "KeyT":
-            keycase("T", 16);
+        case "Key" + activekeylist[0][4]:
+            keycase(activekeylist[0][4], 16);
             break;
-        case "KeyY":
-            keycase("Y", 32);
+        case "Key" + activekeylist[0][5]:
+            keycase(activekeylist[0][5], 32);
             break;
-        case "KeyU":
-            keycase("U", 64);
+        case "Key" + activekeylist[0][6]:
+            keycase(activekeylist[0][6], 64);
+            break;
+        case "Key" + activekeylist[0][7]:
+            keycase(activekeylist[0][7], 128);
+            break;
+        case "Key" + activekeylist[0][8]:
+            keycase(activekeylist[0][8], 256);
             break;
 
-        case "KeyA":
-            keycase("A", -1);
+        case "Key" + activekeylist[1][0]:
+            keycase(activekeylist[1][0], -1);
             break;
-        case "KeyS":
-            keycase("S", -2);
+        case "Key" + activekeylist[1][1]:
+            keycase(activekeylist[1][1], -2);
             break;
-        case "KeyD":
-            keycase("D", -4);
+        case "Key" + activekeylist[1][2]:
+            keycase(activekeylist[1][2], -4);
             break;
-        case "KeyF":
-            keycase("F", -8);
+        case "Key" + activekeylist[1][3]:
+            keycase(activekeylist[1][3], -8);
             break;
-        case "KeyG":
-            keycase("G", -16);
+        case "Key" + activekeylist[1][4]:
+            keycase(activekeylist[1][4], -16);
             break;
-        case "KeyH":
-            keycase("H", -32);
+        case "Key" + activekeylist[1][5]:
+            keycase(activekeylist[1][5], -32);
             break;
-        case "KeyJ":
-            keycase("J", -64);
+        case "Key" + activekeylist[1][6]:
+            keycase(activekeylist[1][6], -64);
+            break;
+        case "Key" + activekeylist[1][7]:
+            keycase(activekeylist[1][7], -128);
+            break;
+        case "Key" + activekeylist[1][8]:
+            keycase(activekeylist[1][8], -256);
             break;
     }
 }
 
 function keyup_ivent(e) {
     switch (e.code) {
-        case "KeyQ":
-            document.querySelector("#Q").classList.remove("active");
-            activelist.splice(activelist.indexOf("Q"), 1);
+        case "Key" + activekeylist[0][0]:
+            document.querySelector("#" + activekeylist[0][0]).classList.remove("active");
+            activelist.splice(activelist.indexOf(activekeylist[0][0]), 1);
             break;
-        case "KeyW":
-            document.querySelector("#W").classList.remove("active");
-            activelist.splice(activelist.indexOf("W"), 1);
+        case "Key" + activekeylist[0][1]:
+            document.querySelector("#" + activekeylist[0][1]).classList.remove("active");
+            activelist.splice(activelist.indexOf(keyactivekeylistlist[0][1]), 1);
             break;
-        case "KeyE":
-            document.querySelector("#E").classList.remove("active");
-            activelist.splice(activelist.indexOf("E"), 1);
+        case "Key" + activekeylist[0][2]:
+            document.querySelector("#" + activekeylist[0][2]).classList.remove("active");
+            activelist.splice(activelist.indexOf(activekeylist[0][2]), 1);
             break;
-        case "KeyR":
-            document.querySelector("#R").classList.remove("active");
-            activelist.splice(activelist.indexOf("R"), 1);
+        case "Key" + activekeylist[0][3]:
+            document.querySelector("#" + activekeylist[0][3]).classList.remove("active");
+            activelist.splice(activelist.indexOf(activekeylist[0][3]), 1);
             break;
-        case "KeyT":
-            document.querySelector("#T").classList.remove("active");
-            activelist.splice(activelist.indexOf("T"), 1);
+        case "Key" + activekeylist[0][4]:
+            document.querySelector("#" + activekeylist[0][4]).classList.remove("active");
+            activelist.splice(activelist.indexOf(activekeylist[0][4]), 1);
             break;
-        case "KeyY":
-            document.querySelector("#Y").classList.remove("active");
-            activelist.splice(activelist.indexOf("Y"), 1);
+        case "Key" + activekeylist[0][5]:
+            document.querySelector("#" + activekeylist[0][5]).classList.remove("active");
+            activelist.splice(activelist.indexOf(activekeylist[0][5]), 1);
             break;
-        case "KeyU":
-            document.querySelector("#U").classList.remove("active");
-            activelist.splice(activelist.indexOf("U"), 1);
+        case "Key" + activekeylist[0][6]:
+            document.querySelector("#" + activekeylist[0][6]).classList.remove("active");
+            activelist.splice(activelist.indexOf(activekeylist[0][6]), 1);
+            break;
+        case "Key" + activekeylist[0][7]:
+            document.querySelector("#" + activekeylist[0][7]).classList.remove("active");
+            activelist.splice(activelist.indexOf(activekeylist[0][7]), 1);
+            break;
+        case "Key" + activekeylist[0][8]:
+            document.querySelector("#" + activekeylist[0][8]).classList.remove("active");
+            activelist.splice(activelist.indexOf(activekeylist[0][8]), 1);
             break;
 
-        case "KeyA":
-            document.querySelector("#A").classList.remove("active");
-            activelist.splice(activelist.indexOf("A"), 1);
+        case "Key" + activekeylist[1][0]:
+            document.querySelector("#" + activekeylist[1][0]).classList.remove("active");
+            activelist.splice(activelist.indexOf(activekeylist[1][0]), 1);
             break;
-        case "KeyS":
-            document.querySelector("#S").classList.remove("active");
-            activelist.splice(activelist.indexOf("S"), 1);
+        case "Key" + activekeylist[1][1]:
+            document.querySelector("#" + activekeylist[1][1]).classList.remove("active");
+            activelist.splice(activelist.indexOf(activekeylist[1][1]), 1);
             break;
-        case "KeyD":
-            document.querySelector("#D").classList.remove("active");
-            activelist.splice(activelist.indexOf("D"), 1);
+        case "Key" + activekeylist[1][2]:
+            document.querySelector("#" + activekeylist[1][2]).classList.remove("active");
+            activelist.splice(activelist.indexOf(activekeylist[1][2]), 1);
             break;
-        case "KeyF":
-            document.querySelector("#F").classList.remove("active");
-            activelist.splice(activelist.indexOf("F"), 1);
+        case "Key" + activekeylist[1][3]:
+            document.querySelector("#" + activekeylist[1][3]).classList.remove("active");
+            activelist.splice(activelist.indexOf(activekeylist[1][3]), 1);
             break;
-        case "KeyG":
-            document.querySelector("#G").classList.remove("active");
-            activelist.splice(activelist.indexOf("G"), 1);
+        case "Key" + activekeylist[1][4]:
+            document.querySelector("#" + activekeylist[1][4]).classList.remove("active");
+            activelist.splice(activelist.indexOf(activekeylist[1][4]), 1);
             break;
-        case "KeyH":
-            document.querySelector("#H").classList.remove("active");
-            activelist.splice(activelist.indexOf("H"), 1);
+        case "Key" + activekeylist[1][5]:
+            document.querySelector("#" + activekeylist[1][5]).classList.remove("active");
+            activelist.splice(activelist.indexOf(activekeylist[1][5]), 1);
             break;
-        case "KeyJ":
-            document.querySelector("#J").classList.remove("active");
-            activelist.splice(activelist.indexOf("J"), 1);
+        case "Key" + activekeylist[1][6]:
+            document.querySelector("#" + activekeylist[1][6]).classList.remove("active");
+            activelist.splice(activelist.indexOf(activekeylist[1][6]), 1);
+            break;
+        case "Key" + activekeylist[1][7]:
+            document.querySelector("#" + activekeylist[1][7]).classList.remove("active");
+            activelist.splice(activelist.indexOf(activekeylist[1][7]), 1);
+            break;
+        case "Key" + activekeylist[1][8]:
+            document.querySelector("#" + activekeylist[1][8]).classList.remove("active");
+            activelist.splice(activelist.indexOf(activekeylist[1][8]), 1);
             break;
     }
 }
 
 window.addEventListener("DOMContentLoaded", function () {
+
+
     document.querySelectorAll('.updown').forEach(function (updown) {
         updown.addEventListener('mousedown', function () {
             this.classList.add('active');
@@ -163,9 +197,9 @@ window.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    let tabs = document.querySelectorAll('.tab-menu .tabs .tab');
-    let contents = document.querySelectorAll('.tab-menu .contents .content');
-    let tabslider = document.querySelector('.tab-menu .tabs .tabslider');
+    const tabs = document.querySelectorAll('.tab-menu .tabs .tab');
+    const contents = document.querySelectorAll('.tab-menu .contents .content');
+    const tabslider = document.querySelector('.tab-menu .tabs .tabslider');
 
     // Set the slider to the initial position
     tabslider.style.left = `calc(0 * calc(100% / 3))`;
@@ -189,13 +223,34 @@ window.addEventListener("DOMContentLoaded", function () {
 
 });
 
-var slider = -1;
-var speed = 1;
+var tslider = -1;
+var nslider = -1;
 setInterval(() => {
-    if (slider != document.querySelector("#threshold").value) {
-        slider = document.querySelector("#threshold").value;
-        threshold = slider;
-        document.querySelector("#thresholddisplay").innerHTML = "keyboard push-threshold : " + slider + "ms";
+    if (tslider != document.querySelector("#threshold").value) {
+        tslider = document.querySelector("#threshold").value;
+        threshold = tslider;
+        document.querySelector("#thresholddisplay").innerHTML = "keyboard push-threshold : " + tslider + "ms";
+    }
+    if (nslider != document.querySelector("#number").value) {
+        nslider = document.querySelector("#number").value;
+        number = nslider;
+        document.querySelector("#keyboardsizedisplay").innerHTML = "number-of-keyboard : " + nslider;
+
+        var uphtml = "";
+        activekeylist = [[], []];
+        for (var n = 0; n < nslider / 2; n++) {
+            uphtml += '<a onclick="note(' + String(2 ** n) + ')" oncontextmenu="showContextMenuForKey(event, 0, ' + n + ')" class="updown" id="' + keylist[0][n] + '">+' + String(2 ** n) + '<span>' + keylist[0][n] + '</span></a>';
+            activekeylist[0][n] = keylist[0][n];
+        }
+
+        var downhtml = "";
+        for (var n = 0; n < nslider / 2; n++) {
+            downhtml += '<a onclick="note(-' + String(2 ** n) + ')" oncontextmenu="showContextMenuForKey(event, 1, ' + n + ')" class="updown" id="' + keylist[1][n] + '">-' + String(2 ** n) + '<span>' + keylist[1][n] + '</span></a>';
+            activekeylist[1][n] = keylist[1][n];
+        }
+
+        document.querySelector("#plusbuttons").innerHTML = uphtml;
+        document.querySelector("#minusbuttons").innerHTML = downhtml;
     }
 }, 1)
 
@@ -204,5 +259,44 @@ function keycase(key, playnote) {
         document.querySelector("#" + key).classList.add("active");
         note(playnote);
         activelist.push(key);
+        console.log(activelist)
     }
+}
+
+window.addEventListener("DOMContentLoaded", function () {
+    var contextMenu = document.getElementById("contextMenu");
+    var contextText = document.getElementById("contextText");
+    var currentButton = null;
+    var currentRow = null;
+});
+
+function showContextMenuForKey(e, row, index) {
+    e.preventDefault();
+    contextMenu.style.left = `${e.pageX}px`;
+    contextMenu.style.top = `${e.pageY}px`;
+    contextMenu.style.display = "block";
+    currentButton = keylist[row][index];
+    currentRow = row;
+    contextText.textContent = "Key " + currentButton;
+}
+
+// オプションがクリックされたときの処理
+function changeKeyboardLayout() {
+    nslider = -1;
+    document.querySelector("#keyboardLayoutInput").style.display = "flex";
+}
+
+// 何か他の部分がクリックされた時の処理
+window.onclick = function () {
+    contextMenu.style.display = "none";
+};
+
+function typed(e) {
+    document.querySelector("#keyboardLayoutDisplay").innerHTML = "New Key : " + e.target.value;
+    console.log(e.target.value);
+    setTimeout(() => {
+        keylist[currentRow][keylist[currentRow].indexOf(currentButton)] = e.target.value;
+        nslider = -1;
+        document.querySelector("#keyboardLayoutInput").style.display = "none";
+    }, 500)
 }
