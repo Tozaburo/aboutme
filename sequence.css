@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Kiwi Maru', serif;
+    text-wrap: balance;
+}
+
+.main {
+    width: 90vmin;
+    margin: 0 auto;
+}
+
+.title {
+    color: black;
+    font-weight: 400;
+    font-size: 5vmin;
+    text-align: center;
+}
+
+.description {
+    color: black;
+    font-weight: 300;
+    font-size: 2vmin;
+    text-align: center;
+}
+
+input {
+    text-align: center;
+    margin: 0 auto;
+    width: 30vmin;
+    height: 5vmin;
+    font-size: 2vmin;
+    font-family: 'Kiwi Maru', serif;
+    border: 0.2vmin black solid;
+    border-radius: 1vmin;
+    box-sizing: border-box;
+}
+
+.input {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+a {
+    cursor: pointer;
+}
+
+.button {
+    color: black;
+    border: 0.2vmin black solid;
+    margin: 1vmin;
+    border-radius: 1vmin;
+    width: 30vmin;
+    height: 5vmin;
+    text-align: center;
+    line-height: 5vmin;
+    font-size: 2vmin;
+    box-sizing: border-box
+}
+
+.buttonshort {
+    color: black;
+    border: 0.2vmin black solid;
+    margin: 1vmin;
+    border-radius: 1vmin;
+    width: 14vmin;
+    height: 5vmin;
+    text-align: center;
+    line-height: 5vmin;
+    font-size: 2vmin;
+    box-sizing: border-box
+}
+
+#array {
+    font-size: 3vmin;
+    text-align: center;
+}
+
+.horizontal {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#addition {
+    color: #007FC4;
+    border: 0.2vmin #007FC4 solid;
+}
+
+#multiplication {
+    color: black;
+    border: 0.2vmin black solid;
+}
+
