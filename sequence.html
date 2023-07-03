@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <link rel="stylesheet" href="sequence.css" />
+    <script src="sequence.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">次項予想</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="title">次項予想</h1>
+        <p class="description">数列の次の項を論理的に予測します。</p>
+        <div class="input">
+            <input type="number" id="numberInput">
+            <a onclick="add()" class="button" id="add">Add</a>
+            <div class="horizontal">
+                <a onclick="addition()" class="buttonshort" id="addition">加算・減算</a>
+                <a onclick="multiplication()" class="buttonshort" id="multiplication">乗算・除算</a>
+            </div>
+        </div>
+        <p id="array">ここに数列が表示されます。</p>
+        <div class="input">
+            <a onclick="predict()" class="button" id="predict">次項予想</a>
+        </div>
+    </div>
+</body>
+
+</html>
