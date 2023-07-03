@@ -19,6 +19,7 @@ function clang() {
         <a href="https://tozaburo.github.io/aboutme/four" class="button">Four</a>
         <a href="https://tozaburo.github.io/aboutme/css" class="button">Organize CSS</a>
         <a href="https://tozaburo.github.io/aboutme/biano" class="button">Biano</a>
+        <a href="https://tozaburo.github.io/aboutme/sequence" class="button">Next Term Prediction</a>
         <p class="comingsoon">Comming soon...</p>
       </div>
     </div>
