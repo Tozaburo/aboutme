@@ -143,9 +143,9 @@ window.addEventListener("DOMContentLoaded", function () {
 
 function clang() {
     if (lang != "ja") {
-        document.querySelector("#title").innerHTML = "Newt Term Prediction";
+        document.querySelector("#title").innerHTML = "Next Term Prediction";
         document.querySelector(".main").innerHTML = `
-    <h1 class="title">Newt Term Prediction</h1>
+    <h1 class="title">Next Term Prediction</h1>
         <p class="description">Logically predict the next term in a sequence of numbers.</p>
         <div class="input">
             <input type="number" id="numberInput">
