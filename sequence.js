@@ -134,3 +134,31 @@ function multiplication() {
         border: "0.2vmin #007FC4 solid"
     });
 }
+
+var lang = window.navigator.language;
+
+window.addEventListener("DOMContentLoaded", function () {
+    clang();
+});
+
+function clang() {
+    if (lang != "ja") {
+        document.querySelector("#title").innerHTML = "Newt Term Prediction";
+        document.querySelector(".main").innerHTML = `
+    <h1 class="title">Newt Term Prediction</h1>
+        <p class="description">Logically predict the next term in a sequence of numbers.</p>
+        <div class="input">
+            <input type="number" id="numberInput">
+            <a onclick="add()" class="button" id="add">Add</a>
+            <div class="horizontal">
+                <a onclick="addition()" class="buttonshort" id="addition">Additions・Subtractions</a>
+                <a onclick="multiplication()" class="buttonshort" id="multiplication">Multiplication・Division</a>
+            </div>
+        </div>
+        <p id="array">A number line is displayed here.</p>
+        <div class="input">
+            <a onclick="predict()" class="button" id="predict">Predict</a>
+        </div>
+    `;
+    }
+}
